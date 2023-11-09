@@ -270,6 +270,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &48253399
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &72188085
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &100057663
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +749,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &116497647
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +898,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &192650189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1001 &220833423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1266,6 +1278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &384110970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &393602711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1576,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &398212243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &406646395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,6 +1874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1001 &433200016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2091,6 +2113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &463675457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,6 +2262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &502022792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,6 +2474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &571586123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &593116131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,6 +2772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &620218119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,6 +2921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &635318176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,6 +3070,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &672598813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +3219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &702640312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,6 +3657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &733810537
 GameObject:
   m_ObjectHideFlags: 0
@@ -3766,6 +3806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &751945713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +3955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &756080929
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,6 +4104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &760458137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4207,6 +4253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1001 &778580620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4566,6 +4614,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &820248757
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,6 +4763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &825125015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4860,6 +4912,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &827067980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5007,6 +5061,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &853093517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5186,6 +5242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &902843324
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,6 +5391,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &944427146
 GameObject:
   m_ObjectHideFlags: 0
@@ -5527,6 +5587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1053524876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,6 +5736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1074061913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,6 +5885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1076139622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6015,6 +6081,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1166551341
 GameObject:
   m_ObjectHideFlags: 0
@@ -6294,6 +6362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1216222188
 GameObject:
   m_ObjectHideFlags: 0
@@ -6441,6 +6511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1256740689
 GameObject:
   m_ObjectHideFlags: 0
@@ -6588,6 +6660,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!114 &1276833957 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1054376643923719174, guid: ea16c3c8c1688234fa81a4f39339bf1b, type: 3}
@@ -6746,6 +6820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1316139146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6893,6 +6969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1332700623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7040,6 +7118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1384857122
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,6 +7267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1389872136
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,6 +7416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1392906013
 GameObject:
   m_ObjectHideFlags: 0
@@ -7481,6 +7565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1395651540
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,6 +7714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1414642060
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,6 +7863,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!4 &1448348313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5545149144574972019, guid: ea16c3c8c1688234fa81a4f39339bf1b, type: 3}
@@ -7927,6 +8017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1458305484
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,6 +8166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1493015948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8221,6 +8315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1534397503
 GameObject:
   m_ObjectHideFlags: 0
@@ -8368,6 +8464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1001 &1561528904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8699,6 +8797,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1717162259
 GameObject:
   m_ObjectHideFlags: 0
@@ -8979,6 +9079,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1750900608
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,6 +9228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1752614769
 GameObject:
   m_ObjectHideFlags: 0
@@ -9320,6 +9424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1826886222
 GameObject:
   m_ObjectHideFlags: 0
@@ -9467,6 +9573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1844559049
 GameObject:
   m_ObjectHideFlags: 0
@@ -9645,6 +9753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1918788062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9792,6 +9902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1919760406
 GameObject:
   m_ObjectHideFlags: 0
@@ -9939,6 +10051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1926057331
 GameObject:
   m_ObjectHideFlags: 0
@@ -10086,6 +10200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &1965819318
 GameObject:
   m_ObjectHideFlags: 0
@@ -10102,7 +10218,7 @@ GameObject:
   - component: {fileID: 1965819321}
   - component: {fileID: 1965819320}
   m_Layer: 0
-  m_Name: x (0)
+  m_Name: X (0)
   m_TagString: X
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10280,7 +10396,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965819318}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5495902117074765545, guid: 2c2eb346d827e2d48bc43120eb507899, type: 3}
 --- !u!1001 &2010027656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10505,6 +10621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &2033977126
 GameObject:
   m_ObjectHideFlags: 0
@@ -10652,6 +10770,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &2052850174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10799,6 +10919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &2092675367
 GameObject:
   m_ObjectHideFlags: 0
@@ -10946,6 +11068,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &2106590297
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,6 +11217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1 &2142920083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11571,6 +11697,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRend: {fileID: 0}
+  HGI: {fileID: 220833425}
+  isTaken: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

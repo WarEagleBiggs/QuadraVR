@@ -236,8 +236,12 @@ public class OVRGrabber : MonoBehaviour
         }
     }
 
+    //public bool isGrabbing = false;
+
     protected virtual void GrabBegin()
     {
+        //isGrabbing = true;
+        
         float closestMagSq = float.MaxValue;
         OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;
@@ -355,6 +359,8 @@ public class OVRGrabber : MonoBehaviour
 
     protected void GrabEnd()
     {
+        //isGrabbing = false;
+        
         if (m_grabbedObj != null)
         {
             OVRPose localPose = new OVRPose
