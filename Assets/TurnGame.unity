@@ -519,7 +519,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4b6aca259da9bcb4c879bd9fc0c1600e, type: 2}
     - target: {fileID: 919132149155446097, guid: 2470d193c40054243b05c74437c49558, type: 3}
       propertyPath: m_Name
-      value: UIring
+      value: Ring - UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2429,7 +2429,7 @@ GameObject:
   - component: {fileID: 467456866}
   - component: {fileID: 467456865}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Text O
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2451,7 +2451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 26.8}
+  m_AnchoredPosition: {x: 75, y: -2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &467456865
@@ -2474,9 +2474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    O - 0'
+  m_text: O - 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -9139,7 +9137,7 @@ GameObject:
   - component: {fileID: 1544955319}
   - component: {fileID: 1544955318}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Text X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9161,7 +9159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: 26.8}
+  m_AnchoredPosition: {x: -75, y: -2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544955318
@@ -9184,9 +9182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    X - 0'
+  m_text: X - 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -9401,7 +9397,7 @@ GameObject:
   - component: {fileID: 1565786699}
   - component: {fileID: 1565786698}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9423,7 +9419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 26.8}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1565786698
@@ -9446,10 +9442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'X Turn
-
-
-'
+  m_text: X Turn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -11264,7 +11257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1965819319
 Transform:
   m_ObjectHideFlags: 0
@@ -12269,6 +12262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2142920084}
+  - component: {fileID: 2142920086}
   - component: {fileID: 2142920085}
   m_Layer: 0
   m_Name: Master
@@ -12306,6 +12300,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameBoard: {fileID: 919132147744579862}
   quats: {x: 0, y: 90, z: 90, w: 0}
+--- !u!114 &2142920086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142920083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d479bd86927114a8ab810af4b8d9e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turn: 0
+  background_X: {fileID: 1395010690}
+  background_O: {fileID: 197763423}
+  Text_Top: {fileID: 1565786698}
+  Text_X: {fileID: 1544955318}
+  Text_O: {fileID: 467456865}
 --- !u!23 &509325266129043283
 MeshRenderer:
   m_ObjectHideFlags: 0
