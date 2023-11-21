@@ -8,6 +8,8 @@ public class EnterCube : MonoBehaviour
 {
     public MeshRenderer mRend;
 
+    public GameMaster gm;
+
 
     public HandGrabInteractor HGI;
 
@@ -32,12 +34,16 @@ public class EnterCube : MonoBehaviour
                 //snap
                 isTaken = true;
                 
+                
+                
                 HandGrabInteractable grab = other.gameObject.GetComponent<HandGrabInteractable>();
                 grab.enabled = false;
 
                 other.gameObject.transform.position = this.transform.position;
                 
                 mRend.enabled = false;
+                
+                gm.TakeTurn();
             }
         }
     }
