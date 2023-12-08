@@ -6,9 +6,6 @@ using UnityEngine;
 
 public class EnterCube : MonoBehaviour
 {
-    //whoami
-    public int coords;
-    
     public MeshRenderer mRend;
 
     public GameMaster gm;
@@ -17,6 +14,8 @@ public class EnterCube : MonoBehaviour
     public HandGrabInteractor HGI;
 
     public bool isTaken;
+    public bool isX;
+    public bool isO;
 
     private void Start()
     {
@@ -27,13 +26,25 @@ public class EnterCube : MonoBehaviour
     {
         if (other.tag == "O" || other.tag == "X")
         {
-            if(!isTaken){
+            if(!isTaken)
+            {
+                
             mRend.enabled = true;
+            
+            
             }
 
             
             if (!HGI.IsGrabbing && isTaken == false)
             {
+                if (other.tag == "O")
+                {
+                    isO = true;
+                } else if (other.tag == "X")
+                {
+                    isX = true;
+                }
+                
                 //snap
                 isTaken = true;
                 
