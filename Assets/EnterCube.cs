@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class EnterCube : MonoBehaviour
 {
+    //whoami
+    public int coords;
+    
     public MeshRenderer mRend;
 
     public GameMaster gm;
