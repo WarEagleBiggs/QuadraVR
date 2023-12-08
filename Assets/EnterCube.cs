@@ -24,6 +24,8 @@ public class EnterCube : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        CubeRaycaster cubeRc = other.gameObject.GetComponent<CubeRaycaster>();
+        
         if (other.tag == "O" || other.tag == "X")
         {
             if(!isTaken)
@@ -37,6 +39,8 @@ public class EnterCube : MonoBehaviour
             
             if (!HGI.IsGrabbing && isTaken == false)
             {
+                cubeRc.RayCastCall();
+                
                 if (other.tag == "O")
                 {
                     isO = true;

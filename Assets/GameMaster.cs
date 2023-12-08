@@ -62,7 +62,6 @@ public class GameMaster : MonoBehaviour
         }
 
         // Activate the instantiated object
-        Debug.Log("inst");
         instantiatedObj.SetActive(true);
 
         
