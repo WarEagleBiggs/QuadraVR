@@ -56,6 +56,10 @@ public class CubeRaycaster : MonoBehaviour
                     }
                 }
                 Debug.Log("num hits: " + numHits + " dir: " + direction);
+                if (numHits >= 3)
+                {
+                    Debug.Log("X Wins!");
+                }
             }
         } else if (whoami == "O")
         {
@@ -78,6 +82,10 @@ public class CubeRaycaster : MonoBehaviour
                     }
                 }
                 Debug.Log("num hits: " + numHits + " dir: " + direction);
+                if (numHits >= 3)
+                {
+                    Debug.Log("O Wins!");
+                }
             }
         }
         
