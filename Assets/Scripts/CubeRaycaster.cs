@@ -29,7 +29,7 @@ public class CubeRaycaster : MonoBehaviour
     {
         RaycastHit hit;
 
-        // Draw ray in the Scene view for debugging
+        // Draw ray 
         Debug.DrawRay(transform.position, direction * rayLength, Color.red);
 
         if (whoami == "X")
@@ -42,10 +42,10 @@ public class CubeRaycaster : MonoBehaviour
                     // Hit self, ignore this hit
                     return;
                 }
-                // Check if the hit object has the tag "Cube"
+                // Check if the hit object has the tag "X"
                 if (hit.collider.CompareTag("X"))
                 {
-                    Debug.Log(this.gameObject.name + "Hit a X on global " + direction + " axis" + 
+                    Debug.Log(this.gameObject.name + " Hit a X on global " + direction + " axis" + 
                               "    " + hit.collider.gameObject.name);
                 }
             
@@ -60,10 +60,10 @@ public class CubeRaycaster : MonoBehaviour
                     // Hit self, ignore this hit
                     return;
                 }
-                // Check if the hit object has the tag "Cube"
+                // Check if the hit object has the tag "O"
                 if (hit.collider.CompareTag("O"))
                 {
-                    Debug.Log(this.gameObject.name + "Hit a O on global " + direction + " axis" + 
+                    Debug.Log(this.gameObject.name + " Hit a O on global " + direction + " axis" + 
                               "    " + hit.collider.gameObject.name);
                 }
             
