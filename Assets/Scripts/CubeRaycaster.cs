@@ -23,7 +23,34 @@ public class CubeRaycaster : MonoBehaviour
         // Negative global axes
         SendRaycast(-Vector3.right); // Negative X axis
         SendRaycast(-Vector3.up); // Negative Y axis
-        SendRaycast(-Vector3.forward); // Negative Z axis
+        SendRaycast(-Vector3.forward); // Negative Z axis]
+        
+        // Diagonals in all directions
+        SendRaycast(Vector3.right + Vector3.up);
+        SendRaycast(Vector3.right + Vector3.down);
+        SendRaycast(Vector3.right + Vector3.forward);
+        SendRaycast(Vector3.right + Vector3.back);
+
+        SendRaycast(Vector3.left + Vector3.up);
+        SendRaycast(Vector3.left + Vector3.down);
+        SendRaycast(Vector3.left + Vector3.forward);
+        SendRaycast(Vector3.left + Vector3.back);
+
+        SendRaycast(Vector3.up + Vector3.forward);
+        SendRaycast(Vector3.up + Vector3.back);
+        SendRaycast(Vector3.down + Vector3.forward);
+        SendRaycast(Vector3.down + Vector3.back);
+
+        // Diagonals combining all three axes
+        SendRaycast(Vector3.right + Vector3.up + Vector3.forward);
+        SendRaycast(Vector3.right + Vector3.up + Vector3.back);
+        SendRaycast(Vector3.right + Vector3.down + Vector3.forward);
+        SendRaycast(Vector3.right + Vector3.down + Vector3.back);
+
+        SendRaycast(Vector3.left + Vector3.up + Vector3.forward);
+        SendRaycast(Vector3.left + Vector3.up + Vector3.back);
+        SendRaycast(Vector3.left + Vector3.down + Vector3.forward);
+        SendRaycast(Vector3.left + Vector3.down + Vector3.back);
     }
 
     void SendRaycast(Vector3 direction)
@@ -55,7 +82,7 @@ public class CubeRaycaster : MonoBehaviour
                                   "    " + hit.collider.gameObject.name);
                     }
                 }
-                Debug.Log("num hits: " + numHits + " dir: " + direction);
+                //Debug.Log("num hits: " + numHits + " dir: " + direction);
                 if (numHits >= 3)
                 {
                     Debug.Log("X Wins!");
@@ -77,11 +104,11 @@ public class CubeRaycaster : MonoBehaviour
                     if (hit.collider.gameObject != gameObject && hit.collider.CompareTag("O"))
                     {
                         numHits++;
-                        Debug.Log(this.gameObject.name + " Hit a X on global " + direction + " axis" +
+                        Debug.Log(this.gameObject.name + " Hit a O on global " + direction + " axis" +
                                   "    " + hit.collider.gameObject.name);
                     }
                 }
-                Debug.Log("num hits: " + numHits + " dir: " + direction);
+                //Debug.Log("num hits: " + numHits + " dir: " + direction);
                 if (numHits >= 3)
                 {
                     Debug.Log("O Wins!");
