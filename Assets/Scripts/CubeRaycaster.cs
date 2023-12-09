@@ -9,14 +9,20 @@ public class CubeRaycaster : MonoBehaviour
 
     void Update()
     {
-        
+        RayCastCall();
     }
 
     public void RayCastCall()
     {
-        SendRaycast(Vector3.right);  // Global X axis
-        SendRaycast(Vector3.up);      // Global Y axis
-        SendRaycast(Vector3.forward); // Global Z axis
+        // Positive global axes
+        SendRaycast(Vector3.right);    // Positive X axis
+        SendRaycast(Vector3.up);       // Positive Y axis
+        SendRaycast(Vector3.forward);  // Positive Z axis
+
+        // Negative global axes
+        SendRaycast(-Vector3.right);   // Negative X axis
+        SendRaycast(-Vector3.up);      // Negative Y axis
+        SendRaycast(-Vector3.forward); // Negative Z axis
     }
 
     void SendRaycast(Vector3 direction)
@@ -31,10 +37,15 @@ public class CubeRaycaster : MonoBehaviour
             // Perform the raycast
             if (Physics.Raycast(transform.position, direction, out hit, rayLength))
             {
+                if (hit.collider.gameObject == gameObject)
+                {
+                    // Hit self, ignore this hit
+                    return;
+                }
                 // Check if the hit object has the tag "Cube"
                 if (hit.collider.CompareTag("X"))
                 {
-                    Debug.Log("Hit a X on global " + direction + " axis" + 
+                    Debug.Log(this.gameObject.name + "Hit a X on global " + direction + " axis" + 
                               "    " + hit.collider.gameObject.name);
                 }
             
@@ -44,10 +55,15 @@ public class CubeRaycaster : MonoBehaviour
             // Perform the raycast
             if (Physics.Raycast(transform.position, direction, out hit, rayLength))
             {
+                if (hit.collider.gameObject == gameObject)
+                {
+                    // Hit self, ignore this hit
+                    return;
+                }
                 // Check if the hit object has the tag "Cube"
                 if (hit.collider.CompareTag("O"))
                 {
-                    Debug.Log("Hit a O on global " + direction + " axis" + 
+                    Debug.Log(this.gameObject.name + "Hit a O on global " + direction + " axis" + 
                               "    " + hit.collider.gameObject.name);
                 }
             

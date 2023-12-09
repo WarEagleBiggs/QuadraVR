@@ -40,7 +40,7 @@ public class EnterCube : MonoBehaviour
             
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
-                cubeRc.RayCastCall();
+                //cubeRc.RayCastCall();
                 
                 if (other.tag == "O")
                 {
