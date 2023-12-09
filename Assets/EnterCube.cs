@@ -11,7 +11,8 @@ public class EnterCube : MonoBehaviour
     public GameMaster gm;
 
 
-    public HandGrabInteractor HGI;
+    public HandGrabInteractor HGIR;
+    public HandGrabInteractor HGIL;
 
     public bool isTaken;
     public bool isX;
@@ -37,7 +38,7 @@ public class EnterCube : MonoBehaviour
             }
 
             
-            if (!HGI.IsGrabbing && isTaken == false)
+            if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
                 cubeRc.RayCastCall();
                 
