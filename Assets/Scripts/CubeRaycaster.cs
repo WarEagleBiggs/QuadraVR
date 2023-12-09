@@ -9,7 +9,7 @@ public class CubeRaycaster : MonoBehaviour
 
     void Update()
     {
-        RayCastCall();
+        //RayCastCall();
     }
 
     public void RayCastCall()
