@@ -37,7 +37,7 @@ public class EnterCube : MonoBehaviour
             
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
-                cubeRc.RayCastCall();
+                
                 
                 if (other.tag == "O")
                 {
@@ -58,6 +58,8 @@ public class EnterCube : MonoBehaviour
                 other.gameObject.transform.position = this.transform.position;
                 
                 mRend.enabled = false;
+                
+                cubeRc.RayCastCall();
                 
                 gm.TakeTurn();
             }

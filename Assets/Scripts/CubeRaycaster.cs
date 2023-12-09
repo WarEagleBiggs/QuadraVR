@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CubeRaycaster : MonoBehaviour
 {
-    public float rayLength = 10f; // Length of the raycast
+    public float rayLength = 100f; // Length of the raycast
     public string whoami;
 
     void Update()
@@ -15,60 +16,71 @@ public class CubeRaycaster : MonoBehaviour
     public void RayCastCall()
     {
         // Positive global axes
-        SendRaycast(Vector3.right);    // Positive X axis
-        SendRaycast(Vector3.up);       // Positive Y axis
-        SendRaycast(Vector3.forward);  // Positive Z axis
+        SendRaycast(Vector3.right); // Positive X axis
+        SendRaycast(Vector3.up); // Positive Y axis
+        SendRaycast(Vector3.forward); // Positive Z axis
 
         // Negative global axes
-        SendRaycast(-Vector3.right);   // Negative X axis
-        SendRaycast(-Vector3.up);      // Negative Y axis
+        SendRaycast(-Vector3.right); // Negative X axis
+        SendRaycast(-Vector3.up); // Negative Y axis
         SendRaycast(-Vector3.forward); // Negative Z axis
     }
 
     void SendRaycast(Vector3 direction)
     {
-        RaycastHit hit;
+        //RaycastHit hit;
 
         // Draw ray 
         Debug.DrawRay(transform.position, direction * rayLength, Color.red);
 
+        Physics.SyncTransforms();
+
         if (whoami == "X")
         {
             // Perform the raycast
-            if (Physics.Raycast(transform.position, direction, out hit, rayLength))
-            {
-                if (hit.collider.gameObject == gameObject)
-                {
-                    // Hit self, ignore this hit
-                    return;
-                }
-                // Check if the hit object has the tag "X"
-                if (hit.collider.CompareTag("X"))
-                {
-                    Debug.Log(this.gameObject.name + " Hit a X on global " + direction + " axis" + 
-                              "    " + hit.collider.gameObject.name);
-                }
+            //int ignoreBitMask = (1 << LayerMask.NameToLayer("Ignore Raycast"));
             
+            RaycastHit[] hits = Physics.RaycastAll(transform.position, direction, maxDistance: rayLength);
+
+            if (hits.Length > 0)
+            {
+                int numHits = 0;
+                foreach (var hit in hits)
+                {
+                    // Check if the hit object has the tag "X"
+                    if (hit.collider.gameObject != gameObject && hit.collider.CompareTag("X"))
+                    {
+                        numHits++;
+                        Debug.Log(this.gameObject.name + " Hit a X on global " + direction + " axis" +
+                                  "    " + hit.collider.gameObject.name);
+                    }
+                }
+                Debug.Log("num hits: " + numHits + " dir: " + direction);
             }
         } else if (whoami == "O")
         {
             // Perform the raycast
-            if (Physics.Raycast(transform.position, direction, out hit, rayLength))
-            {
-                if (hit.collider.gameObject == gameObject)
-                {
-                    // Hit self, ignore this hit
-                    return;
-                }
-                // Check if the hit object has the tag "O"
-                if (hit.collider.CompareTag("O"))
-                {
-                    Debug.Log(this.gameObject.name + " Hit a O on global " + direction + " axis" + 
-                              "    " + hit.collider.gameObject.name);
-                }
+            //int ignoreBitMask = (1 << LayerMask.NameToLayer("Ignore Raycast"));
             
+            RaycastHit[] hits = Physics.RaycastAll(transform.position, direction, maxDistance: rayLength);
+
+            if (hits.Length > 0)
+            {
+                int numHits = 0;
+                foreach (var hit in hits)
+                {
+                    // Check if the hit object has the tag "O"
+                    if (hit.collider.gameObject != gameObject && hit.collider.CompareTag("O"))
+                    {
+                        numHits++;
+                        Debug.Log(this.gameObject.name + " Hit a X on global " + direction + " axis" +
+                                  "    " + hit.collider.gameObject.name);
+                    }
+                }
+                Debug.Log("num hits: " + numHits + " dir: " + direction);
             }
         }
         
+
     }
 }
