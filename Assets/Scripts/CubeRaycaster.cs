@@ -11,6 +11,9 @@ public class CubeRaycaster : MonoBehaviour
 
     public LineConnector LineC;
 
+    public GameObject BlueFireworks;
+    public GameObject OrangeFireworks;
+
 
     public void RayCastCall()
     {
@@ -64,6 +67,7 @@ public class CubeRaycaster : MonoBehaviour
                 if (numHits >= 3)
                 {
                     Debug.Log("X Wins!");
+                    BlueFireworks.SetActive(true);
 
                     Debug.Log("Line Renderer: adding verts " + (hits.Count + 1));
                     List<Vector3> verts = new List<Vector3>();
@@ -93,6 +97,8 @@ public class CubeRaycaster : MonoBehaviour
                 if (numHits >= 3)
                 {
                     Debug.Log("O Wins!");
+                    OrangeFireworks.SetActive(true);
+
 
                     Debug.Log("Line Renderer: adding verts " + (hits.Count + 1));
                     List<Vector3> verts = new List<Vector3>();
