@@ -3543,6 +3543,39 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+--- !u!1 &656328195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656328196}
+  m_Layer: 2
+  m_Name: MapModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &656328196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656328195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8654079538669591830}
+  - {fileID: 375815654541549985}
+  m_Father: {fileID: 543450651930491820}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &672598813
 GameObject:
   m_ObjectHideFlags: 0
@@ -13746,11 +13779,11 @@ Transform:
   m_GameObject: {fileID: 4552842761211093117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0059445477}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0059445486}
   m_LocalScale: {x: 0.53725, y: 0.53724986, z: 0.53724986}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 543450651930491820}
+  m_Father: {fileID: 656328196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &509325266129043283
 MeshRenderer:
@@ -13827,8 +13860,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 63137263}
-  - {fileID: 8654079538669591830}
-  - {fileID: 375815654541549985}
+  - {fileID: 656328196}
   - {fileID: 543450651863621093}
   - {fileID: 1656436122}
   m_Father: {fileID: 0}
@@ -14155,7 +14187,7 @@ GameObject:
   - component: {fileID: 375815654541549985}
   - component: {fileID: 7071813231156694600}
   - component: {fileID: 4429083315758302805}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14173,7 +14205,7 @@ GameObject:
   - component: {fileID: 8654079538669591830}
   - component: {fileID: 136276690446707592}
   - component: {fileID: 8422341559892162391}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14329,11 +14361,11 @@ Transform:
   m_GameObject: {fileID: 4642660490628223996}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0059445477}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0059445486}
   m_LocalScale: {x: 0.53725, y: 0.53724986, z: 0.53724986}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 543450651930491820}
+  m_Father: {fileID: 656328196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
