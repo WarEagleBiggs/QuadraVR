@@ -8,10 +8,8 @@ public class CubeRaycaster : MonoBehaviour
     public float rayLength = 100f; // Length of the raycast
     public string whoami;
 
-    void Update()
-    {
-        //RayCastCall();
-    }
+    public LineConnector LineC;
+
 
     public void RayCastCall()
     {
@@ -55,8 +53,6 @@ public class CubeRaycaster : MonoBehaviour
 
     void SendRaycast(Vector3 direction)
     {
-        //RaycastHit hit;
-
         // Draw ray 
         Debug.DrawRay(transform.position, direction * rayLength, Color.red);
 
@@ -78,14 +74,23 @@ public class CubeRaycaster : MonoBehaviour
                     if (hit.collider.gameObject != gameObject && hit.collider.CompareTag("X"))
                     {
                         numHits++;
-                        Debug.Log(this.gameObject.name + " Hit a X on global " + direction + " axis" +
-                                  "    " + hit.collider.gameObject.name);
+                        
                     }
                 }
                 //Debug.Log("num hits: " + numHits + " dir: " + direction);
                 if (numHits >= 3)
                 {
                     Debug.Log("X Wins!");
+
+                    Debug.Log("Line Renderer: adding verts " + (hits.Length + 1));
+                    List<Vector3> verts = new List<Vector3>();
+                    for (int i = 0; i < hits.Length; i++)
+                    {
+                        verts.Add(hits[i].transform.localPosition);
+                    }
+                    verts.Add(transform.localPosition);
+                    
+                    LineC.SetVerts(verts.ToArray());
                 }
             }
         } else if (whoami == "O")
@@ -104,14 +109,23 @@ public class CubeRaycaster : MonoBehaviour
                     if (hit.collider.gameObject != gameObject && hit.collider.CompareTag("O"))
                     {
                         numHits++;
-                        Debug.Log(this.gameObject.name + " Hit a O on global " + direction + " axis" +
-                                  "    " + hit.collider.gameObject.name);
+                        
                     }
                 }
                 //Debug.Log("num hits: " + numHits + " dir: " + direction);
                 if (numHits >= 3)
                 {
                     Debug.Log("O Wins!");
+
+                    Debug.Log("Line Renderer: adding verts " + (hits.Length + 1));
+                    List<Vector3> verts = new List<Vector3>();
+                    for (int i = 0; i < hits.Length; i++)
+                    {
+                        verts.Add(hits[i].transform.localPosition);
+                    }
+                    verts.Add(transform.localPosition);
+                    
+                    LineC.SetVerts(verts.ToArray());
                 }
             }
         }
