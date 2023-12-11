@@ -4110,6 +4110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702640316}
   - component: {fileID: 702640315}
+  - component: {fileID: 702640321}
   - component: {fileID: 702640320}
   - component: {fileID: 702640314}
   - component: {fileID: 702640313}
@@ -4314,6 +4315,22 @@ MonoBehaviour:
   GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
+--- !u!114 &702640321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702640312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a55ea6e1f366b6488b6b887f81488ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HGIR: {fileID: 220833425}
+  HGIL: {fileID: 2010027658}
+  amInSpot: 0
+  refer: {fileID: 48253400}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5561,6 +5578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 779094353}
   - component: {fileID: 779094359}
+  - component: {fileID: 779094361}
   - component: {fileID: 779094360}
   - component: {fileID: 779094358}
   - component: {fileID: 779094357}
@@ -5765,6 +5783,22 @@ MonoBehaviour:
   GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
+--- !u!114 &779094361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779094352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a55ea6e1f366b6488b6b887f81488ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HGIR: {fileID: 220833425}
+  HGIL: {fileID: 2010027658}
+  amInSpot: 0
+  refer: {fileID: 502022793}
 --- !u!1 &800010739
 GameObject:
   m_ObjectHideFlags: 0
@@ -14079,6 +14113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1965819319}
   - component: {fileID: 1965819325}
+  - component: {fileID: 1965819327}
   - component: {fileID: 1965819326}
   - component: {fileID: 1965819324}
   - component: {fileID: 1965819323}
@@ -14283,6 +14318,22 @@ MonoBehaviour:
   GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
+--- !u!114 &1965819327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965819318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a55ea6e1f366b6488b6b887f81488ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HGIR: {fileID: 220833425}
+  HGIL: {fileID: 2010027658}
+  amInSpot: 0
+  refer: {fileID: 502022793}
 --- !u!1 &2008605624
 GameObject:
   m_ObjectHideFlags: 0

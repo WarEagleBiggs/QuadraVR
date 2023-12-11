@@ -29,6 +29,8 @@ public class EnterCube : MonoBehaviour
         
         if (other.tag == "O" || other.tag == "X")
         {
+            XOchecker test = other.gameObject.GetComponent<XOchecker>();
+            test.canRun = false;
             if(!isTaken)
             {
                 mRend.enabled = true;
@@ -38,6 +40,7 @@ public class EnterCube : MonoBehaviour
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
                 
+                test.amInSpot = true;
                 
                 if (other.tag == "O")
                 {
@@ -63,12 +66,15 @@ public class EnterCube : MonoBehaviour
                 
                 gm.TakeTurn();
             }
+            test.Move();
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "O" || other.tag == "X")
         {
+            XOchecker test = other.gameObject.GetComponent<XOchecker>();
+            test.canRun = true;
             mRend.enabled = false;
         }
     }
