@@ -10,6 +10,8 @@ TagManager:
   - NextButton
   - MenuButton
   - Point
+  - TbButton
+  - ExitButton
   layers:
   - Default
   - TransparentFX

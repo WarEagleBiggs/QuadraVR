@@ -22,8 +22,19 @@ public class MyPoke : MonoBehaviour
     {
         if (other.tag == "NextButton")
         {
-            Debug.Log("end");
+            
+            SceneManager.LoadScene(1);
+        } else if (other.tag == "MenuButton")
+        {
+            
             SceneManager.LoadScene(0);
+        } else if (other.tag == "TbButton")
+        {
+            
+            SceneManager.LoadScene(1);
+        } else if (other.tag == "ExitButton")
+        {
+            Application.Quit();
         }
     }
 }
