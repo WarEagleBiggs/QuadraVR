@@ -23,6 +23,7 @@ public class EnterCube : MonoBehaviour
         mRend = GetComponent<MeshRenderer>();
     }
 
+    public GameObject PresetParent;
     private void OnTriggerStay(Collider other)
     {
         CubeRaycaster cubeRc = other.gameObject.GetComponent<CubeRaycaster>();
@@ -40,7 +41,7 @@ public class EnterCube : MonoBehaviour
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
 
-                other.gameObject.transform.parent = this.transform.parent;
+                other.gameObject.transform.parent = PresetParent.transform;
                 
                 test.amInSpot = true;
                 

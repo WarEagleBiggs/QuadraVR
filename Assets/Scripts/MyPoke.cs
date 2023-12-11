@@ -25,15 +25,15 @@ public class MyPoke : MonoBehaviour
         if (other.tag == "NextButton")
         {
             
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         } else if (other.tag == "MenuButton")
         {
             
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
         } else if (other.tag == "TbButton")
         {
             
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         } else if (other.tag == "ExitButton")
         {
             Application.Quit();
@@ -44,6 +44,7 @@ public class MyPoke : MonoBehaviour
         } else if (other.tag == "TurnRight")
         {
             Debug.Log("turn right");
-        }
+            BalGame.angle = BalGame.angle - 45;
+        } 
     }
 }
