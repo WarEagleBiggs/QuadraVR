@@ -12,6 +12,8 @@ TagManager:
   - Point
   - TbButton
   - ExitButton
+  - TurnLeft
+  - TurnRight
   layers:
   - Default
   - TransparentFX

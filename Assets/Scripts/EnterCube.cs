@@ -39,6 +39,8 @@ public class EnterCube : MonoBehaviour
             
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
+
+                other.gameObject.transform.parent = this.transform.parent;
                 
                 test.amInSpot = true;
                 
