@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameMaster : MonoBehaviour
     public int turn = 1;
 
     public bool isGamePlaying = true;
+    public GameObject EndUI;
 
     //colored backgrounds
     public GameObject background_X;
@@ -83,4 +85,6 @@ public class GameMaster : MonoBehaviour
             Text_Top.SetText("O Turn");
         }
     }
+
+    
 }

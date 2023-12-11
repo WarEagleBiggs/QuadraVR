@@ -7,6 +7,9 @@ TagManager:
   - Cube
   - O
   - X
+  - NextButton
+  - MenuButton
+  - Point
   layers:
   - Default
   - TransparentFX

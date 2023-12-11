@@ -70,6 +70,8 @@ public class CubeRaycaster : MonoBehaviour
                 {
                     Debug.Log("X Wins!");
                     BlueFireworks.SetActive(true);
+                    
+                    GM.EndUI.SetActive(true);
 
                     GM.isGamePlaying = false;
                     GM.background_O.SetActive(false);
@@ -105,6 +107,8 @@ public class CubeRaycaster : MonoBehaviour
                 {
                     Debug.Log("O Wins!");
                     OrangeFireworks.SetActive(true);
+                    
+                    GM.EndUI.SetActive(true);
 
                     GM.isGamePlaying = false;
                     GM.background_O.SetActive(true);
