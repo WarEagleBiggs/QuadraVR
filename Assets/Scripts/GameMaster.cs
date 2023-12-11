@@ -13,6 +13,8 @@ public class GameMaster : MonoBehaviour
     //turn == 1 is orange turn
     public int turn = 1;
 
+    public bool isGamePlaying = true;
+
     //colored backgrounds
     public GameObject background_X;
     public GameObject background_O;
@@ -42,7 +44,7 @@ public class GameMaster : MonoBehaviour
         turn = 1 - turn; // This will toggle between 0 and 1
 
         // Instantiate the object based on the turn and set its position
-        if (turn == 0)
+        if (turn == 0 && isGamePlaying)
         {
             instantiatedObj = Instantiate(obj_x, obj_x.transform.position, Quaternion.Euler(90, 45, 0)); // Add the position and default rotation
             instantiatedObj.transform.SetParent(parent_X.transform, false); // false to not apply world position to local
@@ -51,7 +53,7 @@ public class GameMaster : MonoBehaviour
             
             
         }
-        else if (turn == 1)
+        else if (turn == 1 && isGamePlaying)
         {
             instantiatedObj = Instantiate(obj_o, obj_o.transform.position, Quaternion.identity); // Add the position and default rotation
             instantiatedObj.transform.SetParent(parent_O.transform, false); // false to not apply world position to local
@@ -69,12 +71,12 @@ public class GameMaster : MonoBehaviour
 
     void Update()
     {
-        if (turn == 0)
+        if (turn == 0 && isGamePlaying)
         {
             background_X.SetActive(true);
             background_O.SetActive(false);
             Text_Top.SetText("X Turn");
-        } else if (turn == 1)
+        } else if (turn == 1 && isGamePlaying)
         {
             background_X.SetActive(false);
             background_O.SetActive(true);

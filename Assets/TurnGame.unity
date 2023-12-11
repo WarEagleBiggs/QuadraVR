@@ -4164,6 +4164,7 @@ MonoBehaviour:
   rayLength: 10
   whoami: O
   LineC: {fileID: 48253401}
+  GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
 --- !u!1 &705507993
@@ -5614,6 +5615,7 @@ MonoBehaviour:
   rayLength: 10
   whoami: X
   LineC: {fileID: 502022794}
+  GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
 --- !u!1 &800010739
@@ -13483,6 +13485,7 @@ MonoBehaviour:
   rayLength: 10
   whoami: X
   LineC: {fileID: 502022794}
+  GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
 --- !u!1 &2008605624
@@ -14465,6 +14468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 0
+  isGamePlaying: 1
   background_X: {fileID: 1395010690}
   background_O: {fileID: 197763423}
   Text_Top: {fileID: 1565786698}

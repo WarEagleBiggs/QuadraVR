@@ -11,6 +11,8 @@ public class CubeRaycaster : MonoBehaviour
 
     public LineConnector LineC;
 
+    public GameMaster GM;
+
     public GameObject BlueFireworks;
     public GameObject OrangeFireworks;
 
@@ -69,6 +71,11 @@ public class CubeRaycaster : MonoBehaviour
                     Debug.Log("X Wins!");
                     BlueFireworks.SetActive(true);
 
+                    GM.isGamePlaying = false;
+                    GM.background_O.SetActive(false);
+                    GM.background_X.SetActive(true);
+                    GM.Text_Top.SetText("X Wins!");
+
                     Debug.Log("Line Renderer: adding verts " + (hits.Count + 1));
                     List<Vector3> verts = new List<Vector3>();
                     for (int i = 0; i < hits.Count; i++)
@@ -98,6 +105,12 @@ public class CubeRaycaster : MonoBehaviour
                 {
                     Debug.Log("O Wins!");
                     OrangeFireworks.SetActive(true);
+
+                    GM.isGamePlaying = false;
+                    GM.background_O.SetActive(true);
+                    GM.background_X.SetActive(false);
+                    GM.Text_Top.SetText("O Wins!");
+
 
 
                     Debug.Log("Line Renderer: adding verts " + (hits.Count + 1));
