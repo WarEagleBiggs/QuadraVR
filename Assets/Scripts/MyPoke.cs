@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MyPoke : MonoBehaviour
 {
+    public BalanceGame BalGame;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,13 @@ public class MyPoke : MonoBehaviour
         } else if (other.tag == "ExitButton")
         {
             Application.Quit();
+        } else if (other.tag == "TurnLeft")
+        {
+            Debug.Log("turn left");
+            BalGame.angle = BalGame.angle + 45;
+        } else if (other.tag == "TurnRight")
+        {
+            Debug.Log("turn right");
         }
     }
 }
