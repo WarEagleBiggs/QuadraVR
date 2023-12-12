@@ -16156,6 +16156,8 @@ MonoBehaviour:
   gameBoard: {fileID: 1636995834}
   quats: {x: 0, y: 0, z: 0, w: 0}
   angle: 0
+  HGIR: {fileID: 220833425}
+  HGIL: {fileID: 2010027658}
 --- !u!114 &2142920086
 MonoBehaviour:
   m_ObjectHideFlags: 0
