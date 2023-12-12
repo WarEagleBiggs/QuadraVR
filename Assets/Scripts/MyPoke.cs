@@ -8,31 +8,23 @@ public class MyPoke : MonoBehaviour
 {
     public BalanceGame BalGame;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "NextButton")
         {
-            
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
             SceneManager.LoadScene(0);
         } else if (other.tag == "MenuButton")
         {
-            
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
+
             //SceneManager.LoadScene(0);
         } else if (other.tag == "TbButton")
         {
-            
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
+
             SceneManager.LoadScene(0);
         } else if (other.tag == "ExitButton")
         {
