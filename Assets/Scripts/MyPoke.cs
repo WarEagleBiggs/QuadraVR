@@ -13,6 +13,9 @@ public class MyPoke : MonoBehaviour
     public Vector3 PositionToset;
     public GameObject GameBoard;
 
+    public List<GameObject> MenuObjs;
+    public List<GameObject> GuideObjs;
+    public List<GameObject> AboutObjs;
     private void Start()
     {
         Click = Singleton.Instance.GetComponent<AudioSource>();
@@ -61,6 +64,30 @@ public class MyPoke : MonoBehaviour
             Click.Play();
             GameBoard.transform.position = PositionToset;
             //set board
+        } else if (other.tag == "GuideButton")
+        {
+            Click.Play();
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(false);
+            }
+            foreach (var obj in GuideObjs)
+            {
+                obj.SetActive(true);
+            }
+            
+        } else if (other.tag == "AboutButton")
+        {
+            Click.Play();
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(false);
+            }
+            foreach (var obj in AboutObjs)
+            {
+                obj.SetActive(true);
+            }
+            
         }
     }
 }

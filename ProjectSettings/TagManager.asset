@@ -16,6 +16,8 @@ TagManager:
   - TurnRight
   - AiButton
   - ResetBoard
+  - GuideButton
+  - AboutButton
   layers:
   - Default
   - TransparentFX
