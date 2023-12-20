@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class CubeRaycaster : MonoBehaviour
 {
     public float rayLength = 100f; // Length of the raycast
     public string whoami;
+
+    public AudioSource Fanfare;
 
     public LineConnector LineC;
 
@@ -68,6 +71,7 @@ public class CubeRaycaster : MonoBehaviour
                 if (numHits >= 3)
                 {
                     Debug.Log("X Wins!");
+                    Fanfare.Play();
                     BlueFireworks.SetActive(true);
                     
                     GM.EndUI.SetActive(true);
@@ -105,6 +109,8 @@ public class CubeRaycaster : MonoBehaviour
                 if (numHits >= 3)
                 {
                     Debug.Log("O Wins!");
+                    Fanfare.Play();
+
                     OrangeFireworks.SetActive(true);
                     
                     GM.EndUI.SetActive(true);
