@@ -21,26 +21,26 @@ public class MyPoke : MonoBehaviour
         {
             Click.Play();
             Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         } else if (other.tag == "MenuButton")
         {
             Click.Play();
 
             Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
 
-            //SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
         } else if (other.tag == "TbButton")
         {
             Click.Play();
 
             Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
 
-            SceneManager.LoadScene(0);
-        } else if (other.tag == "ExitButton")
+            SceneManager.LoadScene(1);
+        } else if (other.tag == "AiButton")
         {
             Click.Play();
 
-            Application.Quit();
+            SceneManager.LoadScene(2);
         } else if (other.tag == "TurnLeft")
         {
             Click.Play();
@@ -53,6 +53,10 @@ public class MyPoke : MonoBehaviour
 
             Debug.Log("turn right");
             BalGame.angle = BalGame.angle - 45;
-        } 
+        } else if (other.tag == "ResetBoard")
+        {
+            Click.Play();
+            //set board
+        }
     }
 }
