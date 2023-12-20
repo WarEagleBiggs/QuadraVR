@@ -7576,6 +7576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BalGame: {fileID: 2142920085}
   Click: {fileID: 364858722}
+  PositionToset: {x: 0, y: 1, z: 0.5}
+  GameBoard: {fileID: 919132147744579862}
 --- !u!33 &877127757
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17184,6 +17186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BalGame: {fileID: 2142920085}
   Click: {fileID: 364858722}
+  PositionToset: {x: 0, y: 1, z: 0.5}
+  GameBoard: {fileID: 919132147744579862}
 --- !u!54 &2065717521
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -10,6 +10,9 @@ public class MyPoke : MonoBehaviour
     public BalanceGame BalGame;
     public AudioSource Click;
 
+    public Vector3 PositionToset;
+    public GameObject GameBoard;
+
     private void Start()
     {
         Click = Singleton.Instance.GetComponent<AudioSource>();
@@ -56,6 +59,7 @@ public class MyPoke : MonoBehaviour
         } else if (other.tag == "ResetBoard")
         {
             Click.Play();
+            GameBoard.transform.position = PositionToset;
             //set board
         }
     }
