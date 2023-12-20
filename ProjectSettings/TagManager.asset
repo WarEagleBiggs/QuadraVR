@@ -18,6 +18,9 @@ TagManager:
   - ResetBoard
   - GuideButton
   - AboutButton
+  - BackButton_Guide
+  - BackButton_About
+  - PassthroughButton
   layers:
   - Default
   - TransparentFX

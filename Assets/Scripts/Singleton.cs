@@ -7,8 +7,7 @@ public class Singleton : MonoBehaviour
     public static Singleton Instance { get; private set; }
 
 
-    public int xScore;
-    public int oScore;
+    public bool isPassthrough = true;
 
     public Vector3 MapPosition;
 

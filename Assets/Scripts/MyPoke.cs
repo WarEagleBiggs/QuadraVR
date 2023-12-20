@@ -16,9 +16,12 @@ public class MyPoke : MonoBehaviour
     public List<GameObject> MenuObjs;
     public List<GameObject> GuideObjs;
     public List<GameObject> AboutObjs;
+
+    public OVRManager MyMan;
     private void Start()
     {
         Click = Singleton.Instance.GetComponent<AudioSource>();
+        MyMan.isInsightPassthroughEnabled = Singleton.Instance.isPassthrough;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,25 +30,26 @@ public class MyPoke : MonoBehaviour
         {
             Click.Play();
             Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
             SceneManager.LoadScene(1);
         } else if (other.tag == "MenuButton")
         {
             Click.Play();
 
             Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
-
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
             SceneManager.LoadScene(0);
         } else if (other.tag == "TbButton")
         {
             Click.Play();
 
             Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
-
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
             SceneManager.LoadScene(1);
         } else if (other.tag == "AiButton")
         {
             Click.Play();
-
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
             SceneManager.LoadScene(2);
         } else if (other.tag == "TurnLeft")
         {
@@ -88,6 +92,41 @@ public class MyPoke : MonoBehaviour
                 obj.SetActive(true);
             }
             
+        } else if (other.tag == "BackButton_Guide")
+        {
+            Click.Play();
+            foreach (var obj in GuideObjs)
+            {
+                obj.SetActive(false);
+            }
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(true);
+            }
+            
+        } else if (other.tag == "BackButton_About")
+        {
+            Click.Play();
+            foreach (var obj in AboutObjs)
+            {
+                obj.SetActive(false);
+            }
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(true);
+            }
+            
+        } else if (other.tag == "PassthroughButton")
+        {
+            Click.Play();
+
+            if (MyMan.isInsightPassthroughEnabled == false)
+            {
+                MyMan.isInsightPassthroughEnabled = true;
+            } else if (MyMan.isInsightPassthroughEnabled == true)
+            {
+                MyMan.isInsightPassthroughEnabled = false;
+            }
         }
     }
 }

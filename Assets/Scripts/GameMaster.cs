@@ -84,6 +84,8 @@ public class GameMaster : MonoBehaviour
             background_O.SetActive(true);
             Text_Top.SetText("O Turn");
         }
+        
+        
     }
 
     
