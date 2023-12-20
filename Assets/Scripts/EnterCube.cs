@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class EnterCube : MonoBehaviour
 {
     public MeshRenderer mRend;
 
+    public AudioSource Snap;
     public GameMaster gm;
 
 
@@ -41,6 +43,7 @@ public class EnterCube : MonoBehaviour
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
 
+                Snap.Play();
                 other.gameObject.transform.parent = PresetParent.transform;
                 
                 test.amInSpot = true;
