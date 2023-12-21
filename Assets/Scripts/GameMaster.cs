@@ -87,7 +87,7 @@ public class GameMaster : MonoBehaviour
 
     void Update()
     {
-        
+        //sets UI
         if (turn == 0 && isGamePlaying)
         {
             background_X.SetActive(true);
