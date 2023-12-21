@@ -38,7 +38,19 @@ public class GameMaster : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(BiggsIntroAnim(PokeScript.BGSintro, PokeScript.MenuObjs));
+        if (Singleton.Instance.isFirstLaunch)
+        {
+            Singleton.Instance.isFirstLaunch = false;
+            
+            PokeScript.BGSintro.SetActive(true);
+            
+            foreach (var obj in PokeScript.MenuObjs)
+            {
+                obj.SetActive(false);
+            }
+            
+            StartCoroutine(BiggsIntroAnim(PokeScript.BGSintro, PokeScript.MenuObjs));
+        }
     }
 
     // Call this method when a turn is taken
@@ -93,15 +105,14 @@ public class GameMaster : MonoBehaviour
     public IEnumerator BiggsIntroAnim(GameObject oneObj, List<GameObject> objs)
     {
         
-        yield return new WaitForSeconds(5);
-        Debug.Log("After");
+        yield return new WaitForSeconds(7);
 
         oneObj.SetActive(false);
 
-        /*foreach (var obj in objs)
+        foreach (var obj in objs)
         {
             obj.SetActive(true);
-        }*/
+        }
     }
 
     

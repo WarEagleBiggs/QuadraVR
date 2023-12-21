@@ -24,12 +24,6 @@ public class MyPoke : MonoBehaviour
     private void Start()
     {
 
-        if (Singleton.Instance.isFirstLaunch)
-        {
-            Singleton.Instance.isFirstLaunch = false;
-            BGSintro.SetActive(true);
-
-        }
         
         Click = Singleton.Instance.GetComponent<AudioSource>();
         MyMan.isInsightPassthroughEnabled = Singleton.Instance.isPassthrough;
