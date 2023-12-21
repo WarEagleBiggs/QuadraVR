@@ -2093,6 +2093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPassthrough: 1
   isFirstLaunch: 1
+  canPressButton: 1
   MapPosition: {x: 0, y: 1, z: 0.5}
 --- !u!4 &364858721
 Transform:
