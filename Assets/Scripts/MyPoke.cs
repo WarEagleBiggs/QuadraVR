@@ -21,6 +21,7 @@ public class MyPoke : MonoBehaviour
     public List<GameObject> GuideObjs;
     public List<GameObject> AboutObjs;
     public GameObject HTPM;
+    public GameObject HTPA;
     public OVRManager MyMan;
 
     
@@ -68,6 +69,7 @@ public class MyPoke : MonoBehaviour
         {
             StartCoroutine(Singleton.Instance.PressCooldown());
             Click.Play();
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
             Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
             Singleton.Instance.canPressButton = true;
 
@@ -174,6 +176,24 @@ public class MyPoke : MonoBehaviour
                 obj.SetActive(true);
             }
             HTPM.SetActive(false);
+        } else if (other.tag == "HTPA" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(false);
+            }
+            HTPA.SetActive(true);
+        } else if (other.tag == "BackButtonHTPA" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(true);
+            }
+            HTPA.SetActive(false);
         }
     }
 }

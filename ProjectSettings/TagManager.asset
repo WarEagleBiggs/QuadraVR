@@ -23,6 +23,8 @@ TagManager:
   - PassthroughButton
   - HTPM
   - BackButton_HTPM
+  - HTPA
+  - BackButtonHTPA
   layers:
   - Default
   - TransparentFX
