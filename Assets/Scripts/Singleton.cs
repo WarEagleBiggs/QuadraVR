@@ -8,6 +8,7 @@ public class Singleton : MonoBehaviour
 
 
     public bool isPassthrough = true;
+    public bool isFirstLaunch = true;
 
     public Vector3 MapPosition;
 

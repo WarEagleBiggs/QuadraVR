@@ -88,5 +88,17 @@ public class GameMaster : MonoBehaviour
         
     }
 
+    public IEnumerator BiggsIntroAnim(GameObject oneObj, List<GameObject> objs)
+    {
+        
+        yield return new WaitForSeconds(6);
+        
+        oneObj.SetActive(false);
+
+        foreach (var obj in objs)
+        {
+            obj.SetActive(true);
+        }
+    }
     
 }

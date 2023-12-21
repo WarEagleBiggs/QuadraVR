@@ -10,9 +10,12 @@ public class MyPoke : MonoBehaviour
     public BalanceGame BalGame;
     public AudioSource Click;
 
+    public GameMaster GameMasterScript;
+
     public Vector3 PositionToset;
     public GameObject GameBoard;
 
+    public GameObject BGSintro;
     public List<GameObject> MenuObjs;
     public List<GameObject> GuideObjs;
     public List<GameObject> AboutObjs;
@@ -20,9 +23,20 @@ public class MyPoke : MonoBehaviour
     public OVRManager MyMan;
     private void Start()
     {
+
+        if (Singleton.Instance.isFirstLaunch)
+        {
+            Singleton.Instance.isFirstLaunch = false;
+            BGSintro.SetActive(true);
+            StartCoroutine(GameMasterScript.BiggsIntroAnim(BGSintro, MenuObjs));
+            
+        }
+        
         Click = Singleton.Instance.GetComponent<AudioSource>();
         MyMan.isInsightPassthroughEnabled = Singleton.Instance.isPassthrough;
     }
+
+    
 
     private void OnTriggerEnter(Collider other)
     {
