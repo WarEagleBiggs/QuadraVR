@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class Singleton : MonoBehaviour
 
     public Vector3 MapPosition;
 
+    private float timer = 0f;
+    private float toggleInterval = 5f; // Interval in seconds
     private void Awake()
     {
         if (Instance == null)
@@ -25,7 +28,19 @@ public class Singleton : MonoBehaviour
             Destroy(gameObject); 
         }
     }
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= toggleInterval)
+        {
+            timer = 0f;
+            canPressButton = true;
+        }
+    }
     
+
     public IEnumerator PressCooldown()
     {
         canPressButton = false;

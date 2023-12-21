@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -19,7 +20,7 @@ public class MyPoke : MonoBehaviour
     public List<GameObject> MenuObjs;
     public List<GameObject> GuideObjs;
     public List<GameObject> AboutObjs;
-
+    public GameObject HTPM;
     public OVRManager MyMan;
 
     
@@ -155,6 +156,24 @@ public class MyPoke : MonoBehaviour
             {
                 MyMan.isInsightPassthroughEnabled = false;
             }
+        } else if (other.tag == "HTPM" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(false);
+            }
+            HTPM.SetActive(true);
+        } else if (other.tag == "BackButton_HTPM" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            foreach (var obj in MenuObjs)
+            {
+                obj.SetActive(true);
+            }
+            HTPM.SetActive(false);
         }
     }
 }
