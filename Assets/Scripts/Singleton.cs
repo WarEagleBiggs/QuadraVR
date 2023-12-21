@@ -9,6 +9,7 @@ public class Singleton : MonoBehaviour
 
     public bool isPassthrough = true;
     public bool isFirstLaunch = true;
+    public  bool canPressButton = true;
 
     public Vector3 MapPosition;
 
@@ -23,6 +24,13 @@ public class Singleton : MonoBehaviour
         {
             Destroy(gameObject); 
         }
+    }
+    
+    public IEnumerator PressCooldown()
+    {
+        canPressButton = false;
+        yield return new WaitForSeconds(0.5f);
+        canPressButton = true;
     }
 
 }

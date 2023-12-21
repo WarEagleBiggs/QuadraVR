@@ -2091,8 +2091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4daa07ce8cf00e42bc128c9fadc617f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xScore: 0
-  oScore: 0
+  isPassthrough: 1
+  isFirstLaunch: 1
   MapPosition: {x: 0, y: 1, z: 0.5}
 --- !u!4 &364858721
 Transform:
@@ -7722,8 +7722,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BalGame: {fileID: 2142920085}
   Click: {fileID: 364858722}
+  GameMasterScript: {fileID: 2142920086}
   PositionToset: {x: 0, y: 1, z: 0.5}
   GameBoard: {fileID: 919132147744579862}
+  BGSintro: {fileID: 2142920083}
   MenuObjs: []
   GuideObjs: []
   AboutObjs: []
@@ -17631,8 +17633,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BalGame: {fileID: 2142920085}
   Click: {fileID: 364858722}
+  GameMasterScript: {fileID: 2142920086}
   PositionToset: {x: 0, y: 1, z: 0.5}
   GameBoard: {fileID: 919132147744579862}
+  BGSintro: {fileID: 2142920083}
   MenuObjs: []
   GuideObjs: []
   AboutObjs: []
@@ -18120,6 +18124,7 @@ MonoBehaviour:
   obj_o: {fileID: 702640312}
   parent_X: {fileID: 502022792}
   parent_O: {fileID: 48253399}
+  PokeScript: {fileID: 2065717520}
 --- !u!82 &2142920087
 AudioSource:
   m_ObjectHideFlags: 0

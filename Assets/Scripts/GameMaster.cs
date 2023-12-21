@@ -35,7 +35,7 @@ public class GameMaster : MonoBehaviour
     public GameObject parent_O;
 
     public MyPoke PokeScript;
-
+    
     private void Start()
     {
         if (Singleton.Instance.isFirstLaunch)
@@ -87,6 +87,7 @@ public class GameMaster : MonoBehaviour
 
     void Update()
     {
+        
         if (turn == 0 && isGamePlaying)
         {
             background_X.SetActive(true);
@@ -114,6 +115,10 @@ public class GameMaster : MonoBehaviour
             obj.SetActive(true);
         }
     }
+
+   
+    
+    
 
     
 }
