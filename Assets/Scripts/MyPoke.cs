@@ -28,8 +28,7 @@ public class MyPoke : MonoBehaviour
         {
             Singleton.Instance.isFirstLaunch = false;
             BGSintro.SetActive(true);
-            StartCoroutine(GameMasterScript.BiggsIntroAnim(BGSintro, MenuObjs));
-            
+
         }
         
         Click = Singleton.Instance.GetComponent<AudioSource>();

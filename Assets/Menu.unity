@@ -151,6 +151,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -17922,13 +17926,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142920083}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6d479bd86927114a8ab810af4b8d9e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 0
-  isGamePlaying: 1
+  isGamePlaying: 0
   EndUI: {fileID: 1836593460}
   background_X: {fileID: 1395010690}
   background_O: {fileID: 197763423}
@@ -17939,6 +17943,7 @@ MonoBehaviour:
   obj_o: {fileID: 0}
   parent_X: {fileID: 0}
   parent_O: {fileID: 0}
+  PokeScript: {fileID: 1744051501}
 --- !u!82 &2142920087
 AudioSource:
   m_ObjectHideFlags: 0
