@@ -369,7 +369,7 @@ GameObject:
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &48253400
 Transform:
   m_ObjectHideFlags: 0
@@ -3940,6 +3940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 545979395}
+  - component: {fileID: 545979396}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -3962,6 +3963,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &545979396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545979394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ec582229cc4f247a35656501c89bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomSelectedID: 0
+  Positions:
+  - {fileID: 1477015746660392274}
+  - {fileID: 760458137}
+  - {fileID: 756080929}
+  - {fileID: 751945713}
+  - {fileID: 1806879279}
+  - {fileID: 398212243}
+  - {fileID: 1316139146}
+  - {fileID: 1919760406}
+  - {fileID: 1456050940}
+  - {fileID: 1750532767}
+  - {fileID: 406646395}
+  - {fileID: 1907283230}
+  - {fileID: 827067980}
+  - {fileID: 1685113541}
+  - {fileID: 2052850174}
+  - {fileID: 1534397503}
+  - {fileID: 1414642060}
+  - {fileID: 1493015948}
+  - {fileID: 1392906013}
+  - {fileID: 1389872136}
+  - {fileID: 1750900608}
+  - {fileID: 712257673}
+  - {fileID: 1918788062}
+  - {fileID: 1284429812}
+  - {fileID: 825125015}
+  - {fileID: 568272305}
+  - {fileID: 384110970}
+  - {fileID: 989394082}
+  - {fileID: 820248757}
+  - {fileID: 902843324}
+  - {fileID: 1395651540}
+  - {fileID: 116497647}
+  - {fileID: 436302577}
+  - {fileID: 60637331}
+  - {fileID: 463675457}
+  - {fileID: 593116131}
+  - {fileID: 2033977126}
+  - {fileID: 1926057331}
+  - {fileID: 393602711}
+  - {fileID: 1090742253}
+  - {fileID: 1384857122}
+  - {fileID: 897189118}
+  - {fileID: 800010739}
+  - {fileID: 2019387590}
+  - {fileID: 1074061913}
+  - {fileID: 620218119}
+  - {fileID: 192650189}
+  - {fileID: 1216222188}
+  - {fileID: 571586123}
+  - {fileID: 733810537}
+  - {fileID: 1256740689}
+  - {fileID: 1053524876}
+  - {fileID: 1458305484}
+  - {fileID: 35415296}
+  - {fileID: 1215796240}
+  - {fileID: 72188085}
+  - {fileID: 635318176}
+  - {fileID: 296444231}
+  - {fileID: 1826886222}
+  - {fileID: 2092675367}
+  - {fileID: 1332700623}
+  - {fileID: 2106590297}
+  - {fileID: 672598813}
+  - {fileID: 100057663}
 --- !u!1 &568272305
 GameObject:
   m_ObjectHideFlags: 0
@@ -5318,7 +5397,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702640312}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
   m_Name: 
@@ -5359,7 +5438,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702640312}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
@@ -5397,7 +5476,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702640312}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a55ea6e1f366b6488b6b887f81488ff, type: 3}
   m_Name: 
@@ -18161,6 +18240,9 @@ MonoBehaviour:
   parent_X: {fileID: 502022792}
   parent_O: {fileID: 48253399}
   PokeScript: {fileID: 2065717520}
+  AiObject: {fileID: 545979396}
+  isAiGame: 1
+  isMainMenu: 0
 --- !u!82 &2142920087
 AudioSource:
   m_ObjectHideFlags: 0

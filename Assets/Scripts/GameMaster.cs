@@ -35,10 +35,24 @@ public class GameMaster : MonoBehaviour
     public GameObject parent_O;
 
     public MyPoke PokeScript;
+
+    public AI AiObject;
+    public bool isAiGame = false;
+
+    public bool isMainMenu;
     
     private void Start()
     {
-        if (Singleton.Instance.isFirstLaunch)
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            isMainMenu = true;
+        }
+        else
+        {
+            isMainMenu = false;
+        }
+        
+        if (Singleton.Instance.isFirstLaunch && isMainMenu)
         {
             Singleton.Instance.isFirstLaunch = false;
             
@@ -58,6 +72,8 @@ public class GameMaster : MonoBehaviour
     {
         // Switch turn
         turn = 1 - turn; // This will toggle between 0 and 1
+        
+        
 
         // Instantiate the object based on the turn and set its position
         if (turn == 0 && isGamePlaying)
@@ -71,12 +87,18 @@ public class GameMaster : MonoBehaviour
         }
         else if (turn == 1 && isGamePlaying)
         {
+           
+
             instantiatedObj = Instantiate(obj_o, obj_o.transform.position, Quaternion.identity); // Add the position and default rotation
             instantiatedObj.transform.SetParent(parent_O.transform, false); // false to not apply world position to local
             instantiatedObj.transform.localScale = obj_o.transform.localScale; // Set the local scale to match obj_x
             instantiatedObj.transform.localPosition = Vector3.zero; // Set local position to (0,0,0)
             
-            
+            if (isAiGame)
+            {
+                AiObject.PlaceO(instantiatedObj);
+                
+            }
         }
 
         // Activate the instantiated object
