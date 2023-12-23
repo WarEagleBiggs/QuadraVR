@@ -175,7 +175,45 @@ public class GameMaster : MonoBehaviour
         return neighbors;
     }
 
-    private int GetRunLengthInDirection(Vector3Int startPos, Vector3Int dirV, PlayerType type, ref Vector3Int openMove)
+    private int CountRunLengthInDirection(Vector3Int startPos, Vector3Int dirV, PlayerType type)
+    {
+        // --- count maximum run length in direction, return run length > 0 ---
+
+        int validRunLength = 1;
+
+        int distance = 1;
+
+        while (true) {
+            Vector3Int testPos = startPos + (dirV * distance);
+            
+            if (!IsCellCoordinateValid(testPos)) {
+                break;
+            }
+           
+            GameCellEntry testEntry = GetGridCell(testPos);
+        
+            if (testEntry.m_IsOccupied) { 
+                // cell is occupied
+                if (testEntry.m_PlayerType == type) {
+                    // same type
+                    validRunLength++;
+                } else {
+                    // opposite type, not a valid direction
+                    break;
+                }
+            } else {
+                // available cell 
+                break;
+            }
+
+            // increment 
+            distance++;
+        }
+       
+        return validRunLength;
+    }
+
+    private int GetRunLengthWithOpenInDirection(Vector3Int startPos, Vector3Int dirV, PlayerType type, ref Vector3Int openMove)
     {
         // --- for valid run with openings in direction, return run length > 0 ---
         
@@ -223,7 +261,7 @@ public class GameMaster : MonoBehaviour
             if (potentialRunLength == maxLength && isMoveValid) {
                 // success, game winning length
                 validRunLength = potentialRunLength;
-                Debug.LogError("XXXXX should be a winner");
+                //Debug.LogError("XXXXX should be a winner for " + type);
                 break;
             }
             
@@ -249,7 +287,7 @@ public class GameMaster : MonoBehaviour
                         foreach (var dirV in m_AllDirections) {
                             
                             Vector3Int openMove = Vector3Int.zero;
-                            int runLength = GetRunLengthInDirection(pos, dirV, type, ref openMove);
+                            int runLength = GetRunLengthWithOpenInDirection(pos, dirV, type, ref openMove);
 
                             if (runLength > maxRunLength) {
                                 maxRunLength = runLength;
@@ -263,6 +301,34 @@ public class GameMaster : MonoBehaviour
         }        
         
         return maxRunLength;
+    }
+
+    public bool IsAWin(PlayerType type)
+    {
+        // --- loop through every element in Matrix that matches type ---
+
+        bool isWin = false;
+        
+        for (int x = 0; x < 4; ++x) {
+            for (int y = 0; y < 4; ++y) {
+                for (int z = 0; z < 4; ++z) {
+                    Vector3Int pos = new Vector3Int(x, y, z);
+                    GameCellEntry entry = GetGridCell(pos);
+                    if (entry.m_IsOccupied && entry.m_PlayerType == type) {
+                        // --- test cell as potential endpoint, look in every direction searching for longest run ---
+                        foreach (var dirV in m_AllDirections) {
+                            Vector3Int openMove = Vector3Int.zero;
+                            int runLength = CountRunLengthInDirection(pos, dirV, type);
+                            if (runLength == 4) {
+                                isWin = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        return isWin;
     }
     
     public GameCellEntry GetGridCell(Vector3Int coord)

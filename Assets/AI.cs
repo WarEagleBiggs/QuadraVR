@@ -38,31 +38,41 @@ public class AI : MonoBehaviour
     public void PlaceO(GameObject newO)
     {
         bool isPlaced = false;
+        //
+        // if (!isPlaced) {
+        //     // --- find opponent's current best run length---
+        //
+        //     Vector3Int availableCellPos = Vector3Int.zero;
+        //     int runLength = m_GameMaster.GetOpenCellOnLongestLine(PlayerType.X, ref availableCellPos);
+        //
+        //     if (runLength > 0) {
+        //         // attempt to block  
+        //         isPlaced = true;
+        //
+        //         GameCellEntry cell = m_GameMaster.GetGridCell(availableCellPos);
+        //         newO.transform.position = cell.m_EnterCube.transform.position;
+        //
+        //         // store piece information into grid matrix
+        //         cell.m_IsOccupied = true;
+        //         cell.m_PlayerType = PlayerType.O;
+        //     }
+        // }
 
-        {
-            // --- find opponent's current best run length ---
-
-
-            
-        }
-
-        {
+        if (!isPlaced) {
             // --- find AIs best open move toward a win ---
 
             // number of AI's in Game Matrix
             int numAi = m_GameMaster.GetNumberOfPieces(PlayerType.O);
 
             if (numAi > 0) {
-                // attempt to add to a neighboring object
-                Vector3Int cellPos = Vector3Int.zero;
-                int runLength = m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref cellPos);
                 
+                // attempt to add to a neighboring object
+                Vector3Int availableCellPos = Vector3Int.zero;
+                int runLength = m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref availableCellPos);
+               
                 if (runLength > 0) {
-
                     isPlaced = true;
-
-                    GameCellEntry cell = m_GameMaster.GetGridCell(cellPos);
-
+                    GameCellEntry cell = m_GameMaster.GetGridCell(availableCellPos);
                     newO.transform.position = cell.m_EnterCube.transform.position;
 
                     // store piece information into grid matrix
