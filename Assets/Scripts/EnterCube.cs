@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Serialization;
 
 public class EnterCube : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class EnterCube : MonoBehaviour
     public bool isTaken;
     public bool isX;
     public bool isO;
+    [FormerlySerializedAs("m_GridCoordinate")] public Vector3Int m_GridCoord;
 
     private void Start()
     {
@@ -42,7 +44,8 @@ public class EnterCube : MonoBehaviour
             
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
-
+                // --- player has released the piece, snap-to cell center --- 
+                
                 Snap.Play();
                 other.gameObject.transform.parent = PresetParent.transform;
                 
@@ -58,9 +61,15 @@ public class EnterCube : MonoBehaviour
                 
                 //snap
                 isTaken = true;
-                
-                
-                
+
+                // store piece information into grid matrix
+                GameCellEntry cell = gm.GetGridCell(m_GridCoord);
+                if (cell != null)
+                {
+                    cell.m_IsOccupied = true;
+                    cell.m_PlayerType = isX ? PlayerType.X : PlayerType.O;
+                }
+
                 HandGrabInteractable grab = other.gameObject.GetComponent<HandGrabInteractable>();
                 grab.enabled = false;
 
