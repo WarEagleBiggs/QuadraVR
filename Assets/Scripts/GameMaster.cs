@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 
 public enum PlayerType
@@ -14,13 +15,13 @@ public enum PlayerType
 public class GameCellEntry
 {
     public bool m_IsOccupied;
-    public GameObject m_PlayerObj;
+    public EnterCube m_EnterCube;
     public PlayerType m_PlayerType;
 
     public GameCellEntry()
     {
         m_IsOccupied = false;
-        m_PlayerObj = null;
+        m_EnterCube = null;
         m_PlayerType = PlayerType.X;
     }
 }
@@ -67,37 +68,36 @@ public class GameMaster : MonoBehaviour
 
     private void PopulateGameMatrix()
     {
-        if (m_GridLayers.Count != 4)
-        {
-            Debug.LogError("Error, grid layers should be 4");
-        }
-        else
-        {
-            Vector3Int coord = Vector3Int.zero;
-            // --- bottom to top (y) 16 children ---
-            foreach (var layer in m_GridLayers)
-            {
-                coord.z = 0;
-                // --- left to right (x) ---
-                foreach (Transform cell in layer)
-                {
-                    EnterCube entry = cell.GetComponent<EnterCube>();
-                    // store coordinate
-                    entry.m_GridCoord = coord;
-                    coord.z = coord.x == 3 ? coord.z + 1 : coord.z;
-                    coord.x = coord.x < 3 ? coord.x + 1 : 0;
-                }
-
-                coord.y = coord.y < 3 ? coord.y + 1 : 0;
-            }
-        }
-
         // --- initialize GameObjects with GameCellEntry ---
         for (int x = 0; x < 4; ++x) {
             for (int y = 0; y < 4; ++y) {
                 for (int z = 0; z < 4; ++z) {
                     m_GameMatrix[x, y, z] = new GameCellEntry();
                 }
+            }
+        }
+
+        if (m_GridLayers.Count != 4) {
+            Debug.LogError("Error, grid layers should be 4");
+        }else {
+            Vector3Int coord = Vector3Int.zero;
+            // --- bottom to top (y) 16 children ---
+            foreach (var layer in m_GridLayers) {
+                coord.z = 0;
+                // --- left to right (x) ---
+                foreach (Transform cell in layer) {
+                    EnterCube ec = cell.GetComponent<EnterCube>();
+                    // store coordinate
+                    ec.m_GridCoord = coord;
+
+                    // store EnterCube instance inside of matrix
+                    GetGridCell(coord).m_EnterCube = ec;
+                    
+                    coord.z = coord.x == 3 ? coord.z + 1 : coord.z;
+                    coord.x = coord.x < 3 ? coord.x + 1 : 0;
+                }
+
+                coord.y = coord.y < 3 ? coord.y + 1 : 0;
             }
         }
     }
@@ -175,26 +175,89 @@ public class GameMaster : MonoBehaviour
         return neighbors;
     }
 
-    public bool GetOpenCellOnLongestLine(PlayerType type, ref Vector3Int coord)
+    private int GetRunLengthInDirection(Vector3Int startPos, Vector3Int dirV, PlayerType type, ref Vector3Int openMove)
+    {
+        // --- for valid run with openings in direction, return run length > 0 ---
+        
+        int validRunLength = 0;
+
+        const int maxLength = 4;
+        int potentialRunLength = 1;
+        int distance = 1;
+
+        bool isMoveValid = false;
+        
+        while (true) {
+            
+            Vector3Int testPos = startPos + (dirV * distance);
+            
+            if (!IsCellCoordinateValid(testPos)) {
+                break;
+            }
+           
+            GameCellEntry testEntry = GetGridCell(testPos);
+        
+            if (testEntry.m_IsOccupied) { 
+                // cell is occupied
+                if (testEntry.m_PlayerType == type) {
+                    // same type
+                    potentialRunLength++;
+                } else {
+                    // opposite type, not a valid direction
+                    break;
+                }
+            } else {
+                // available cell 
+                if (!isMoveValid) {
+                    // set open move
+                    openMove = testPos;
+                    isMoveValid = true;
+                } else {
+                    // success, done searching
+                    validRunLength = potentialRunLength;
+                    break;
+                }
+                potentialRunLength++;
+            }
+
+            if (potentialRunLength == maxLength && isMoveValid) {
+                // success, game winning length
+                validRunLength = potentialRunLength;
+                break;
+            }
+            
+            // increment 
+            distance++;
+        }
+       
+        return validRunLength;
+    }
+    
+    public bool GetOpenCellOnLongestLine(PlayerType type, ref Vector3Int openPos)
     {
         bool isFound = false;
 
-        int longestRunLength = 0;
-        
+        int maxRunLength = 0;
+
         // --- loop through every element in Matrix that matches type ---
         for (int x = 0; x < 4; ++x) {
             for (int y = 0; y < 4; ++y) {
-                for (int z = 0; z < 4; ++z)
-                {
-                    GameCellEntry entry = m_GameMatrix[x, y, z];
-                    if (entry.m_PlayerType == type)
-                    {
-                        // --- look in every direction and search for longest run with an opening ---
-                        
-                        // todo XXX
-                        
-                        
-                        
+                for (int z = 0; z < 4; ++z) {
+                    Vector3Int pos = new Vector3Int(x, y, z);
+                    GameCellEntry entry = GetGridCell(pos);
+                    if (entry.m_PlayerType == type) {
+                        // --- test cell as potential endpoint, look in every direction searching for longest run ---
+                        foreach (var dirV in m_AllDirections) {
+                            
+                            Vector3Int openMove = Vector3Int.zero;
+                            int runLength = GetRunLengthInDirection(pos, dirV, type, ref openMove);
+
+                            if (runLength > maxRunLength) {
+                                maxRunLength = runLength;
+                                openPos = openMove;
+                                isFound = true;
+                            }
+                        }
                         
                     }
                 }

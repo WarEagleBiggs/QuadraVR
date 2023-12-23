@@ -15,15 +15,12 @@ public class AI : MonoBehaviour
     private void ChooseRandomAvailablePosition(GameObject newO)
     {
         // --- choose a random available location ---
-        while (true)
-        {
+        while (true) {
             RandomSelectedID = Random.Range(0, Positions.Count-1);
             GameObject obj = Positions[RandomSelectedID];
             EnterCube cubeScript = obj.GetComponent<EnterCube>();
 
-            if (!cubeScript.isTaken)
-            {
-                Debug.Log("Fill spot: " + RandomSelectedID);
+            if (!cubeScript.isTaken) {
                 EnterCube ec = Positions[RandomSelectedID].GetComponent<EnterCube>();
                 newO.transform.position = ec.transform.position;
                 
@@ -33,10 +30,8 @@ public class AI : MonoBehaviour
                     cell.m_IsOccupied = true;
                     cell.m_PlayerType = PlayerType.O;
                 }
-               
                 break;
             }
-
         }
     }
     
@@ -46,22 +41,24 @@ public class AI : MonoBehaviour
         int numAi = m_GameMaster.GetNumberOfPieces(PlayerType.O);
         
         bool isAdded = false;
-        if (numAi > 0)
-        {
+        if (numAi > 0) {
             // attempt to add to a neighboring object
-            // todo
-            Vector3Int cellIndex = Vector3Int.zero;
-            if (m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref cellIndex))
-            {
+            Vector3Int cellPos = Vector3Int.zero;
+            if (m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref cellPos)) {
+                
                 isAdded = true;
-            }
-            
+                
+                GameCellEntry cell = m_GameMaster.GetGridCell(cellPos);
 
-            //int maxInRow = FindMaxInRow();
+                newO.transform.position = cell.m_EnterCube.transform.position;
+
+                // store piece information into grid matrix
+                cell.m_IsOccupied = true;
+                cell.m_PlayerType = PlayerType.O;
+            }
         }
 
-        if (!isAdded)
-        {
+        if (!isAdded) {
             ChooseRandomAvailablePosition(newO);
         }
 
