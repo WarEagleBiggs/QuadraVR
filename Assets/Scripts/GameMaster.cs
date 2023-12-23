@@ -100,9 +100,110 @@ public class GameMaster : MonoBehaviour
                 }
             }
         }
-
     }
 
+    public int GetNumberOfPieces(PlayerType type)
+    {
+        int count = 0;
+        
+        foreach (var entry in m_GameMatrix) {
+            if (entry.m_PlayerType == type) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    private bool IsCellCoordinateValid(Vector3Int cell)
+    {
+        return (cell.x >= 0 && cell.x < 4 && cell.y >= 0 && cell.y < 4 && cell.z >= 0 && cell.z < 4);
+    }
+
+    private Vector3Int[] m_AllDirections =
+        new Vector3Int[]
+        {
+            new Vector3Int(1, 0, 0),
+            new Vector3Int(-1, 0, 0),
+            new Vector3Int(0, 1, 0),
+            new Vector3Int(0, -1, 0),
+            new Vector3Int(0, 0, 1),
+            new Vector3Int(0, 0, -1),
+
+            // leave x
+            new Vector3Int(1, 1, 0),
+            new Vector3Int(1, -1, 0),
+            new Vector3Int(1, 0, 1),
+            new Vector3Int(1, 0, -1),
+
+            new Vector3Int(-1, 1, 0),
+            new Vector3Int(-1, -1, 0),
+            new Vector3Int(-1, 0, 1),
+            new Vector3Int(-1, 0, -1),
+
+            // leave y
+            new Vector3Int(-1, 1, 0),
+            new Vector3Int(0, 1, 1),
+            new Vector3Int(0, 1, -1),
+            
+            new Vector3Int(-1, -1, 0),
+            new Vector3Int(0, -1, 1),
+            new Vector3Int(0, -1, -1),
+            
+            // leave z
+            new Vector3Int(-1, 0, 1),
+            new Vector3Int(0, 1, 1),
+            new Vector3Int(0, -1, 1),
+
+            new Vector3Int(-1, 0, -1),
+            new Vector3Int(0, 1, -1),
+            new Vector3Int(0, -1, -1),
+        };
+    
+    
+    private List<Vector3Int> GetAllNeighbors(Vector3Int cell)
+    {
+        List<Vector3Int> neighbors = new List<Vector3Int>();
+
+        foreach (var dirV in m_AllDirections) {
+            if (IsCellCoordinateValid(cell + dirV)) {
+                neighbors.Add(cell + dirV);
+            }
+        }
+        
+        return neighbors;
+    }
+
+    public bool GetOpenCellOnLongestLine(PlayerType type, ref Vector3Int coord)
+    {
+        bool isFound = false;
+
+        int longestRunLength = 0;
+        
+        // --- loop through every element in Matrix that matches type ---
+        for (int x = 0; x < 4; ++x) {
+            for (int y = 0; y < 4; ++y) {
+                for (int z = 0; z < 4; ++z)
+                {
+                    GameCellEntry entry = m_GameMatrix[x, y, z];
+                    if (entry.m_PlayerType == type)
+                    {
+                        // --- look in every direction and search for longest run with an opening ---
+                        
+                        // todo XXX
+                        
+                        
+                        
+                        
+                    }
+                }
+            }
+        }        
+        
+        return isFound;
+    }
+    
     public GameCellEntry GetGridCell(Vector3Int coord)
     {
         GameCellEntry ret = null;

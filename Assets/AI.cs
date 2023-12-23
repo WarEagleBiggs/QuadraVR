@@ -9,9 +9,8 @@ using Random = UnityEngine.Random;
 public class AI : MonoBehaviour
 {
     public int RandomSelectedID;
+    public GameMaster m_GameMaster;
     public List<GameObject> Positions;
-
-    private List<GameObject> AiObjects = new List<GameObject>();
 
     private void ChooseRandomAvailablePosition(GameObject newO)
     {
@@ -25,8 +24,16 @@ public class AI : MonoBehaviour
             if (!cubeScript.isTaken)
             {
                 Debug.Log("Fill spot: " + RandomSelectedID);
-                newO.transform.position = Positions[RandomSelectedID].transform.position;
-                AiObjects.Add(newO);
+                EnterCube ec = Positions[RandomSelectedID].GetComponent<EnterCube>();
+                newO.transform.position = ec.transform.position;
+                
+                // store piece information into grid matrix
+                GameCellEntry cell = m_GameMaster.GetGridCell(ec.m_GridCoord);
+                if (cell != null) {
+                    cell.m_IsOccupied = true;
+                    cell.m_PlayerType = PlayerType.O;
+                }
+               
                 break;
             }
 
@@ -35,12 +42,21 @@ public class AI : MonoBehaviour
     
     public void PlaceO(GameObject newO)
     {
+        // number of AI's in Game Matrix
+        int numAi = m_GameMaster.GetNumberOfPieces(PlayerType.O);
+        
         bool isAdded = false;
-        if (AiObjects.Count > 0)
+        if (numAi > 0)
         {
             // attempt to add to a neighboring object
             // todo
+            Vector3Int cellIndex = Vector3Int.zero;
+            if (m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref cellIndex))
+            {
+                isAdded = true;
+            }
             
+
             //int maxInRow = FindMaxInRow();
         }
 
