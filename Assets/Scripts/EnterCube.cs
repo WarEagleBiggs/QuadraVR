@@ -13,7 +13,6 @@ public class EnterCube : MonoBehaviour
     public AudioSource Snap;
     public GameMaster gm;
 
-
     public HandGrabInteractor HGIR;
     public HandGrabInteractor HGIL;
 
@@ -77,48 +76,44 @@ public class EnterCube : MonoBehaviour
                 
                 mRend.enabled = false;
                 
-                
-                // // evaluate potential win
-                // // todo
-                //
-                // Vector3Int availableCellPos = Vector3Int.zero;
-                // int xRunLength = gm.GetOpenCellOnLongestLine(PlayerType.X, ref availableCellPos);
-                // int oRunLength = gm.GetOpenCellOnLongestLine(PlayerType.O, ref availableCellPos);
-                //
-                // if (xRunLength == 4) {
-                //     Debug.LogError("XXX Winner (X)");
-                // }
-                //
-                // if (oRunLength == 4) {
-                //     Debug.LogError("XXX Winner (O)");
-                // }
-
-                if (gm.IsAWin(PlayerType.X))
-                {
+                if (gm.IsAWin(PlayerType.X)) {
                     // Fanfare.Play();
                     // BlueFireworks.SetActive(true);
                     
                     gm.EndUI.SetActive(true);
-
                     gm.isGamePlaying = false;
                     gm.background_O.SetActive(false);
                     gm.background_X.SetActive(true);
                     gm.Text_Top.SetText("X Wins!");
 
+                    // List<List<Vector3Int>> lineList = gm.m_WinningLinesListPerPlayerMap[PlayerType.X];
+                    // foreach (var line in lineList) {
+                    //     Debug.LogError("winning line: ");
+                    //     foreach (var cellCoord in line) {
+                    //         GameCellEntry cellEntry = gm.GetGridCell(cellCoord);
+                    //         Debug.LogError(cellEntry.m_EnterCube.transform.position + " ");
+                    //     }
+                    // }
                 }
 
-                if (gm.IsAWin(PlayerType.O))
-                {
+                if (gm.IsAWin(PlayerType.O)) {
                     // Fanfare.Play();
                     // OrangeFireworks.SetActive(true);
                     
                     gm.EndUI.SetActive(true);
-
                     gm.isGamePlaying = false;
                     gm.background_O.SetActive(true);
                     gm.background_X.SetActive(false);
                     gm.Text_Top.SetText("O Wins!");
-
+                    
+                    // List<List<Vector3Int>> lineList = gm.m_WinningLinesListPerPlayerMap[PlayerType.X];
+                    // foreach (var line in lineList) {
+                    //     Debug.LogError("winning line: ");
+                    //     foreach (var cellCoord in line) {
+                    //         GameCellEntry cellEntry = gm.GetGridCell(cellCoord);
+                    //         Debug.LogError(cellEntry.m_EnterCube.transform.position + " ");
+                    //     }
+                    // }
 
                 }
                 //

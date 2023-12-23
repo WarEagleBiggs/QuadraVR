@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
@@ -175,44 +176,6 @@ public class GameMaster : MonoBehaviour
         return neighbors;
     }
 
-    private int CountRunLengthInDirection(Vector3Int startPos, Vector3Int dirV, PlayerType type)
-    {
-        // --- count maximum run length in direction, return run length > 0 ---
-
-        int validRunLength = 1;
-
-        int distance = 1;
-
-        while (true) {
-            Vector3Int testPos = startPos + (dirV * distance);
-            
-            if (!IsCellCoordinateValid(testPos)) {
-                break;
-            }
-           
-            GameCellEntry testEntry = GetGridCell(testPos);
-        
-            if (testEntry.m_IsOccupied) { 
-                // cell is occupied
-                if (testEntry.m_PlayerType == type) {
-                    // same type
-                    validRunLength++;
-                } else {
-                    // opposite type, not a valid direction
-                    break;
-                }
-            } else {
-                // available cell 
-                break;
-            }
-
-            // increment 
-            distance++;
-        }
-       
-        return validRunLength;
-    }
-
     private int GetRunLengthWithOpenInDirection(Vector3Int startPos, Vector3Int dirV, PlayerType type, ref Vector3Int openMove)
     {
         // --- for valid run with openings in direction, return run length > 0 ---
@@ -303,12 +266,59 @@ public class GameMaster : MonoBehaviour
         return maxRunLength;
     }
 
+    private int CountRunLengthInDirection(Vector3Int startPos, Vector3Int dirV, 
+        PlayerType type, ref List<Vector3Int> cellPosList)
+    {
+        // --- count maximum run length in direction, return run length > 0 ---
+
+        int validRunLength = 1;
+
+        int distance = 1;
+
+        cellPosList.Add(startPos);
+        
+        while (true) {
+            Vector3Int testPos = startPos + (dirV * distance);
+            
+            if (!IsCellCoordinateValid(testPos)) {
+                break;
+            }
+           
+            GameCellEntry testEntry = GetGridCell(testPos);
+        
+            if (testEntry.m_IsOccupied) { 
+                // cell is occupied
+                if (testEntry.m_PlayerType == type) {
+                    // same type
+                    validRunLength++;
+                    cellPosList.Add(testPos);
+                } else {
+                    // opposite type, not a valid direction
+                    break;
+                }
+            } else {
+                // available cell 
+                break;
+            }
+
+            // increment 
+            distance++;
+        }
+       
+        return validRunLength;
+    }
+
+    public Dictionary<PlayerType, List<List<Vector3Int>>> m_WinningLinesListPerPlayerMap =
+        new Dictionary<PlayerType, List<List<Vector3Int>>>(); 
+    
     public bool IsAWin(PlayerType type)
     {
         // --- loop through every element in Matrix that matches type ---
 
         bool isWin = false;
         
+        List<Vector3Int> cellPosList = new List<Vector3Int>();
+
         for (int x = 0; x < 4; ++x) {
             for (int y = 0; y < 4; ++y) {
                 for (int z = 0; z < 4; ++z) {
@@ -318,9 +328,17 @@ public class GameMaster : MonoBehaviour
                         // --- test cell as potential endpoint, look in every direction searching for longest run ---
                         foreach (var dirV in m_AllDirections) {
                             Vector3Int openMove = Vector3Int.zero;
-                            int runLength = CountRunLengthInDirection(pos, dirV, type);
+                            cellPosList.Clear();
+                            int runLength = CountRunLengthInDirection(pos, dirV, type, ref cellPosList);
                             if (runLength == 4) {
                                 isWin = true;
+                                // // store winning points list
+                                // if (!m_WinningLinesListPerPlayerMap.ContainsKey(type)) {
+                                //     m_WinningLinesListPerPlayerMap[type] = new List<List<Vector3Int>>();
+                                // }
+                                // List<List<Vector3Int>> listOfLines = m_WinningLinesListPerPlayerMap[type];
+                                // listOfLines.Add(cellPosList);
+                                // m_WinningLinesListPerPlayerMap[type] = listOfLines;
                             }
                         }
                     }

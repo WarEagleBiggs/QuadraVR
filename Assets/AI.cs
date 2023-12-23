@@ -38,7 +38,7 @@ public class AI : MonoBehaviour
     public void PlaceO(GameObject newO)
     {
         bool isPlaced = false;
-        //
+        
         // if (!isPlaced) {
         //     // --- find opponent's current best run length---
         //
