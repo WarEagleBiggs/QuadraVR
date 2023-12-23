@@ -11,8 +11,11 @@ public class AI : MonoBehaviour
     public int RandomSelectedID;
     public List<GameObject> Positions;
 
-    public void PlaceO(GameObject newO)
+    private List<GameObject> AiObjects = new List<GameObject>();
+
+    private void ChooseRandomAvailablePosition(GameObject newO)
     {
+        // --- choose a random available location ---
         while (true)
         {
             RandomSelectedID = Random.Range(0, Positions.Count-1);
@@ -23,9 +26,28 @@ public class AI : MonoBehaviour
             {
                 Debug.Log("Fill spot: " + RandomSelectedID);
                 newO.transform.position = Positions[RandomSelectedID].transform.position;
-                Debug.Log(newO);
+                AiObjects.Add(newO);
                 break;
             }
+
         }
+    }
+    
+    public void PlaceO(GameObject newO)
+    {
+        bool isAdded = false;
+        if (AiObjects.Count > 0)
+        {
+            // attempt to add to a neighboring object
+            // todo
+            
+            //int maxInRow = FindMaxInRow();
+        }
+
+        if (!isAdded)
+        {
+            ChooseRandomAvailablePosition(newO);
+        }
+
     }
 }
