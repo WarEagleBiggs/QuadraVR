@@ -223,6 +223,7 @@ public class GameMaster : MonoBehaviour
             if (potentialRunLength == maxLength && isMoveValid) {
                 // success, game winning length
                 validRunLength = potentialRunLength;
+                Debug.LogError("XXXXX should be a winner");
                 break;
             }
             
@@ -233,10 +234,8 @@ public class GameMaster : MonoBehaviour
         return validRunLength;
     }
     
-    public bool GetOpenCellOnLongestLine(PlayerType type, ref Vector3Int openPos)
+    public int GetOpenCellOnLongestLine(PlayerType type, ref Vector3Int openPos)
     {
-        bool isFound = false;
-
         int maxRunLength = 0;
 
         // --- loop through every element in Matrix that matches type ---
@@ -255,7 +254,6 @@ public class GameMaster : MonoBehaviour
                             if (runLength > maxRunLength) {
                                 maxRunLength = runLength;
                                 openPos = openMove;
-                                isFound = true;
                             }
                         }
                         
@@ -264,7 +262,7 @@ public class GameMaster : MonoBehaviour
             }
         }        
         
-        return isFound;
+        return maxRunLength;
     }
     
     public GameCellEntry GetGridCell(Vector3Int coord)

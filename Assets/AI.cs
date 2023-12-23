@@ -37,30 +37,43 @@ public class AI : MonoBehaviour
     
     public void PlaceO(GameObject newO)
     {
-        // number of AI's in Game Matrix
-        int numAi = m_GameMaster.GetNumberOfPieces(PlayerType.O);
-        
-        bool isAdded = false;
-        if (numAi > 0) {
-            // attempt to add to a neighboring object
-            Vector3Int cellPos = Vector3Int.zero;
-            if (m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref cellPos)) {
-                
-                isAdded = true;
-                
-                GameCellEntry cell = m_GameMaster.GetGridCell(cellPos);
+        bool isPlaced = false;
 
-                newO.transform.position = cell.m_EnterCube.transform.position;
+        {
+            // --- find opponent's current best run length ---
 
-                // store piece information into grid matrix
-                cell.m_IsOccupied = true;
-                cell.m_PlayerType = PlayerType.O;
+
+            
+        }
+
+        {
+            // --- find AIs best open move toward a win ---
+
+            // number of AI's in Game Matrix
+            int numAi = m_GameMaster.GetNumberOfPieces(PlayerType.O);
+
+            if (numAi > 0) {
+                // attempt to add to a neighboring object
+                Vector3Int cellPos = Vector3Int.zero;
+                int runLength = m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref cellPos);
+                
+                if (runLength > 0) {
+
+                    isPlaced = true;
+
+                    GameCellEntry cell = m_GameMaster.GetGridCell(cellPos);
+
+                    newO.transform.position = cell.m_EnterCube.transform.position;
+
+                    // store piece information into grid matrix
+                    cell.m_IsOccupied = true;
+                    cell.m_PlayerType = PlayerType.O;
+                }
             }
         }
 
-        if (!isAdded) {
+        if (!isPlaced) {
             ChooseRandomAvailablePosition(newO);
         }
-
     }
 }
