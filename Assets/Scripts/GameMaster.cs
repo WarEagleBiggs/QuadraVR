@@ -308,8 +308,8 @@ public class GameMaster : MonoBehaviour
         return validRunLength;
     }
 
-    public Dictionary<PlayerType, List<List<Vector3Int>>> m_WinningLinesListPerPlayerMap =
-        new Dictionary<PlayerType, List<List<Vector3Int>>>(); 
+    public Dictionary<PlayerType, List<Tuple<EnterCube, EnterCube>>> m_WinningLinesListPerPlayerMap =
+        new Dictionary<PlayerType, List<Tuple<EnterCube, EnterCube>>>();
     
     public bool IsAWin(PlayerType type)
     {
@@ -332,13 +332,8 @@ public class GameMaster : MonoBehaviour
                             int runLength = CountRunLengthInDirection(pos, dirV, type, ref cellPosList);
                             if (runLength == 4) {
                                 isWin = true;
-                                // // store winning points list
-                                // if (!m_WinningLinesListPerPlayerMap.ContainsKey(type)) {
-                                //     m_WinningLinesListPerPlayerMap[type] = new List<List<Vector3Int>>();
-                                // }
-                                // List<List<Vector3Int>> listOfLines = m_WinningLinesListPerPlayerMap[type];
-                                // listOfLines.Add(cellPosList);
-                                // m_WinningLinesListPerPlayerMap[type] = listOfLines;
+                                AddEndPointsToWinningList(
+                                    type, cellPosList[0], cellPosList[^1]);
                             }
                         }
                     }
@@ -348,7 +343,21 @@ public class GameMaster : MonoBehaviour
 
         return isWin;
     }
-    
+
+    private void AddEndPointsToWinningList(PlayerType type, Vector3Int coord0, Vector3Int coordN)
+    {
+        // store winning points list
+        if (!m_WinningLinesListPerPlayerMap.ContainsKey(type)) {
+            m_WinningLinesListPerPlayerMap[type] = new List<Tuple<EnterCube, EnterCube>>();
+        }
+
+        GameCellEntry cellEntry0 = GetGridCell(coord0);
+        GameCellEntry cellEntryN = GetGridCell(coordN);
+
+        m_WinningLinesListPerPlayerMap[type].Add(new Tuple<EnterCube, EnterCube>(
+            cellEntry0.m_EnterCube, cellEntryN.m_EnterCube));
+    }
+
     public GameCellEntry GetGridCell(Vector3Int coord)
     {
         GameCellEntry ret = null;
@@ -359,9 +368,8 @@ public class GameMaster : MonoBehaviour
 
         return ret;
     }
-
-
-private void Start()
+    
+    private void Start()
     {
         // populate the layout of the game matrix
         PopulateGameMatrix();

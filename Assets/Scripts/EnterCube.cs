@@ -16,6 +16,11 @@ public class EnterCube : MonoBehaviour
     public HandGrabInteractor HGIR;
     public HandGrabInteractor HGIL;
 
+    public LineConnector LineO;
+    public LineConnector LineX;
+
+    public GameObject m_Piece;
+
     public bool isTaken;
     public bool isX;
     public bool isO;
@@ -40,14 +45,15 @@ public class EnterCube : MonoBehaviour
                 mRend.enabled = true;
             }
 
-            
             if (!HGIL.IsGrabbing && !HGIR.IsGrabbing && isTaken == false)
             {
                 // --- player has released the piece, snap-to cell center --- 
                 
                 Snap.Play();
                 other.gameObject.transform.parent = PresetParent.transform;
-                
+
+                m_Piece = other.gameObject;
+
                 test.amInSpot = true;
                 
                 if (other.tag == "O")
@@ -86,16 +92,16 @@ public class EnterCube : MonoBehaviour
                     gm.background_X.SetActive(true);
                     gm.Text_Top.SetText("X Wins!");
 
-                    // List<List<Vector3Int>> lineList = gm.m_WinningLinesListPerPlayerMap[PlayerType.X];
-                    // foreach (var line in lineList) {
-                    //     Debug.LogError("winning line: ");
-                    //     foreach (var cellCoord in line) {
-                    //         GameCellEntry cellEntry = gm.GetGridCell(cellCoord);
-                    //         Debug.LogError(cellEntry.m_EnterCube.transform.position + " ");
-                    //     }
-                    // }
+                    // --- draw line ---
+                    List<Tuple<EnterCube, EnterCube>> endPoints = gm.m_WinningLinesListPerPlayerMap[PlayerType.X];
+                    List<Vector3> verts = new List<Vector3>();
+                    foreach (Tuple<EnterCube,EnterCube> entry in endPoints) {
+                        verts.Add(entry.Item1.m_Piece.transform.localPosition);
+                        verts.Add(entry.Item2.m_Piece.transform.localPosition);
+                    }
+                    LineX.SetVerts(verts.ToArray());
                 }
-
+                
                 if (gm.IsAWin(PlayerType.O)) {
                     // Fanfare.Play();
                     // OrangeFireworks.SetActive(true);
@@ -106,18 +112,15 @@ public class EnterCube : MonoBehaviour
                     gm.background_X.SetActive(false);
                     gm.Text_Top.SetText("O Wins!");
                     
-                    // List<List<Vector3Int>> lineList = gm.m_WinningLinesListPerPlayerMap[PlayerType.X];
-                    // foreach (var line in lineList) {
-                    //     Debug.LogError("winning line: ");
-                    //     foreach (var cellCoord in line) {
-                    //         GameCellEntry cellEntry = gm.GetGridCell(cellCoord);
-                    //         Debug.LogError(cellEntry.m_EnterCube.transform.position + " ");
-                    //     }
-                    // }
-
+                    // --- draw line ---
+                    List<Tuple<EnterCube, EnterCube>> endPoints = gm.m_WinningLinesListPerPlayerMap[PlayerType.O];
+                    List<Vector3> verts = new List<Vector3>();
+                    foreach (Tuple<EnterCube,EnterCube> entry in endPoints) {
+                        verts.Add(entry.Item1.m_Piece.transform.localPosition);
+                        verts.Add(entry.Item2.m_Piece.transform.localPosition);
+                    }
+                    LineO.SetVerts(verts.ToArray());
                 }
-                //
-                //cubeRc.RayCastCall();
                 
                 gm.TakeTurn();
             }
