@@ -62,7 +62,9 @@ public class GameMaster : MonoBehaviour
     public bool isAiGame = false;
 
     public bool isMainMenu;
-
+    
+    public AI.DifficultyLevel m_AiDifficulty = AI.DifficultyLevel.Easy;
+    
     public List<Transform> m_GridLayers = new List<Transform>();
 
     private GameCellEntry[,,] m_GameMatrix = new GameCellEntry[4, 4, 4];
@@ -424,10 +426,8 @@ public class GameMaster : MonoBehaviour
             instantiatedObj.transform.localScale = obj_o.transform.localScale; // Set the local scale to match obj_x
             instantiatedObj.transform.localPosition = Vector3.zero; // Set local position to (0,0,0)
             
-            if (isAiGame)
-            {
-                AiObject.PlaceO(instantiatedObj);
-                
+            if (isAiGame) {
+                AiObject.PlaceO(instantiatedObj, m_AiDifficulty);
             }
         }
 
@@ -451,8 +451,6 @@ public class GameMaster : MonoBehaviour
             background_O.SetActive(true);
             Text_Top.SetText("O Turn");
         }
-        
-        
     }
 
     public IEnumerator BiggsIntroAnim(GameObject oneObj, List<GameObject> objs)
