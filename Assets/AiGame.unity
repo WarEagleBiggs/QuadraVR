@@ -352,6 +352,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -628,6 +629,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -736,6 +738,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -894,6 +897,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -1102,6 +1106,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -1210,6 +1215,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -1443,6 +1449,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -1769,6 +1776,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -1988,7 +1996,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 543450651863621093}
+  m_Father: {fileID: 1636995835}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &267142284
 MonoBehaviour:
@@ -2111,6 +2119,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -2493,6 +2502,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -2706,6 +2716,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -2864,6 +2875,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -3265,6 +3277,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -3517,6 +3530,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -3675,6 +3689,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -3833,6 +3848,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -3991,6 +4007,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -4283,6 +4300,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -4441,6 +4459,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -4768,6 +4787,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -5387,6 +5407,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -5592,6 +5613,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -5876,6 +5898,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -5984,6 +6007,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -6301,6 +6325,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -6409,6 +6434,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -6944,6 +6970,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -7707,6 +7734,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -7928,6 +7956,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -8244,6 +8273,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -8402,6 +8432,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -8560,6 +8591,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -9032,6 +9064,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -9296,6 +9329,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -9695,6 +9729,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -9929,6 +9964,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -10131,6 +10167,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -10454,6 +10491,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -10691,6 +10729,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -11708,6 +11747,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -11871,6 +11911,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -12009,7 +12050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 543450651863621093}
+  m_Father: {fileID: 1636995835}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1289653765
 MonoBehaviour:
@@ -12177,6 +12218,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -12285,6 +12327,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -12443,6 +12486,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -12676,6 +12720,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -13109,6 +13154,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -13222,6 +13268,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -13602,6 +13649,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -14032,6 +14080,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -14190,6 +14239,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -14423,6 +14473,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -14507,6 +14558,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 267142283}
+  - {fileID: 1289653764}
   - {fileID: 543450651863621093}
   m_Father: {fileID: 543450651930491820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15086,6 +15139,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -15574,6 +15628,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -15782,6 +15837,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -16256,6 +16312,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -16414,6 +16471,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -16572,6 +16630,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -16989,6 +17048,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -17147,6 +17207,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -17305,6 +17366,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -17618,6 +17680,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -18136,6 +18199,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -18344,6 +18408,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -18502,6 +18567,7 @@ MonoBehaviour:
   HGIL: {fileID: 2010027658}
   LineO: {fileID: 1289653765}
   LineX: {fileID: 267142284}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
@@ -18589,6 +18655,7 @@ MonoBehaviour:
   AiObject: {fileID: 545979396}
   isAiGame: 1
   isMainMenu: 0
+  m_AiDifficulty: 0
   m_GridLayers:
   - {fileID: 1076139623}
   - {fileID: 1060322812}
@@ -18760,8 +18827,6 @@ Transform:
   m_LocalScale: {x: 0.53725, y: 0.53724986, z: 0.53724986}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1289653764}
-  - {fileID: 267142283}
   - {fileID: 1076139623}
   - {fileID: 1060322812}
   - {fileID: 221568858}
