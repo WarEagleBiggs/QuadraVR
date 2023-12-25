@@ -41,9 +41,9 @@ public class AI : MonoBehaviour
 
     }
 
-    private static ProbabilityTable s_EasyProbability = new ProbabilityTable(40, 65, 100);
-    private static ProbabilityTable s_NormalProbability = new ProbabilityTable(25, 60, 100);
-    private static ProbabilityTable s_HardProbability = new ProbabilityTable(5, 70, 100);
+    private static ProbabilityTable s_EasyProbability = new ProbabilityTable(20, 65, 100);
+    private static ProbabilityTable s_NormalProbability = new ProbabilityTable(1, 85, 100);
+    private static ProbabilityTable s_HardProbability = new ProbabilityTable(0, 99, 100);
 
     private bool ChooseRandomAvailablePosition(GameObject newO)
     {
@@ -109,8 +109,9 @@ public class AI : MonoBehaviour
             // attempt to add to a neighboring object
             Vector3Int availableCellPos = Vector3Int.zero;
             int runLength = m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref availableCellPos);
-           
+
             if (runLength > 0) {
+                
                 isPlaced = true;
                 GameCellEntry cell = m_GameMaster.GetGridCell(availableCellPos);
                 newO.transform.position = cell.m_EnterCube.transform.position;
@@ -129,8 +130,17 @@ public class AI : MonoBehaviour
     {
         bool isPlaced = false;
 
-        int randomDraw = Random.Range(0, 100);
+        // check possibility of AI Win
+        Vector3Int availableCellPos = Vector3Int.zero;
+        int runLength = m_GameMaster.GetOpenCellOnLongestLine(PlayerType.O, ref availableCellPos);
+        if (runLength == 4) {
+            // force a win if possible
+            isPlaced = PlaceInLine(newO);
+            //Debug.LogError("detected a chance to win, placing in line " + (isPlaced ? "success" : "failed"));
+        }
 
+        int randomDraw = Random.Range(0, 100);
+        
         ProbabilityTable table = new ProbabilityTable();
         switch (difficultyLevel) {
             case DifficultyLevel.Easy:
@@ -142,22 +152,27 @@ public class AI : MonoBehaviour
             case DifficultyLevel.Hard:
                 table = s_HardProbability;
                 break;
-        }
-            
-        if (randomDraw < table.m_RandomProb) {
-            isPlaced = ChooseRandomAvailablePosition(newO);
-        } else if (randomDraw < table.m_AggressiveProb) {
-            isPlaced = BlockPlayer(newO);
-        } else if (randomDraw < table.m_PassiveProb) {
-            isPlaced = PlaceInLine(newO);
-        }
+            }
+
         if (!isPlaced) {
-            // fallback 
-            isPlaced = ChooseRandomAvailablePosition(newO);
+            if (randomDraw < table.m_RandomProb) {
+                isPlaced = ChooseRandomAvailablePosition(newO);
+                //Debug.LogError("attempted to choose random " + (isPlaced ? "success" : "failed"));
+            }
+            else if (randomDraw < table.m_AggressiveProb) {
+                isPlaced = BlockPlayer(newO);
+                //Debug.LogError("attempted to block " + (isPlaced ? "success" : "failed"));
+            }
+            else if (randomDraw < table.m_PassiveProb) {
+                isPlaced = PlaceInLine(newO);
+                //Debug.LogError("attempted to plane in line" + (isPlaced ? "success" : "failed"));
+            }
         }
 
         if (!isPlaced) {
-            ChooseRandomAvailablePosition(newO);
+            // fallback 
+            isPlaced = ChooseRandomAvailablePosition(newO);
+            //Debug.LogError("fallback random " + (isPlaced ? "success" : "failed"));
         }
     }
 }

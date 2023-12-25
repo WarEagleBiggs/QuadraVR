@@ -226,7 +226,6 @@ public class GameMaster : MonoBehaviour
             if (potentialRunLength == maxLength && isMoveValid) {
                 // success, game winning length
                 validRunLength = potentialRunLength;
-                //Debug.LogError("XXXXX should be a winner for " + type);
                 break;
             }
             
