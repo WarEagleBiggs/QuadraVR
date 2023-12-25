@@ -80,14 +80,14 @@ public class MyPoke : MonoBehaviour
             Click.Play();
 
             Debug.Log("turn left");
-            BalGame.angle = BalGame.angle + 45;
+            BalGame.angle = BalGame.angle + 15;
         } else if (other.tag == "TurnRight" && Singleton.Instance.canPressButton)
         {
             StartCoroutine(Singleton.Instance.PressCooldown());
             Click.Play();
 
             Debug.Log("turn right");
-            BalGame.angle = BalGame.angle - 45;
+            BalGame.angle = BalGame.angle - 15;
         } else if (other.tag == "ResetBoard" && Singleton.Instance.canPressButton)
         {
             StartCoroutine(Singleton.Instance.PressCooldown());
@@ -194,6 +194,36 @@ public class MyPoke : MonoBehaviour
                 obj.SetActive(true);
             }
             HTPA.SetActive(false);
+        } else if (other.tag == "easyButton" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
+            Singleton.Instance.canPressButton = true;
+            Singleton.Instance.isEasy = true;
+            SceneManager.LoadScene(2);
+        } else if (other.tag == "normalButton" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
+            Singleton.Instance.canPressButton = true;
+            Singleton.Instance.isNormal = true;
+            SceneManager.LoadScene(2);
+        } else if (other.tag == "hardButton" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            
+            Singleton.Instance.MapPosition = BalGame.WholeGame.transform.position;
+            Singleton.Instance.isPassthrough = MyMan.isInsightPassthroughEnabled;
+            Singleton.Instance.canPressButton = true;
+            Singleton.Instance.isHard = true;
+            SceneManager.LoadScene(2);
         }
     }
 }

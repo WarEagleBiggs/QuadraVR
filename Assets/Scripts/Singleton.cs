@@ -12,6 +12,10 @@ public class Singleton : MonoBehaviour
     public bool isFirstLaunch = true;
     public  bool canPressButton = true;
 
+    public bool isEasy = false;
+    public bool isNormal = false;
+    public bool isHard = false;
+
     public Vector3 MapPosition;
 
     private float timer = 0f;

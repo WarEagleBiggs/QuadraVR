@@ -25,6 +25,9 @@ TagManager:
   - BackButton_HTPM
   - HTPA
   - BackButtonHTPA
+  - easyButton
+  - normalButton
+  - hardButton
   layers:
   - Default
   - TransparentFX

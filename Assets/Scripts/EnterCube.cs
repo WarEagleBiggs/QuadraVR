@@ -24,6 +24,11 @@ public class EnterCube : MonoBehaviour
     public bool isTaken;
     public bool isX;
     public bool isO;
+    
+    public GameObject BlueFireworks;
+    public GameObject OrangeFireworks;
+    public AudioSource Fanfare;
+    
     [FormerlySerializedAs("m_GridCoordinate")] public Vector3Int m_GridCoord;
 
     private void Start()
@@ -83,8 +88,8 @@ public class EnterCube : MonoBehaviour
                 mRend.enabled = false;
                 
                 if (gm.IsAWin(PlayerType.X)) {
-                    // Fanfare.Play();
-                    // BlueFireworks.SetActive(true);
+                    Fanfare.Play();
+                    BlueFireworks.SetActive(true);
                     
                     gm.EndUI.SetActive(true);
                     gm.isGamePlaying = false;
@@ -103,8 +108,12 @@ public class EnterCube : MonoBehaviour
                 }
                 
                 if (gm.IsAWin(PlayerType.O)) {
-                    // Fanfare.Play();
-                    // OrangeFireworks.SetActive(true);
+                    if (!gm.isAiGame)
+                    {
+                        Fanfare.Play();
+                        OrangeFireworks.SetActive(true);
+                    }
+                     
                     
                     gm.EndUI.SetActive(true);
                     gm.isGamePlaying = false;

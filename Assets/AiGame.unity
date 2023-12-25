@@ -356,6 +356,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &48253399
@@ -633,6 +636,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &87540432
@@ -742,6 +748,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &87540437
@@ -901,6 +910,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &90557180
@@ -1110,6 +1122,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &140143853
@@ -1219,6 +1234,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &140143858
@@ -1453,6 +1471,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 1, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &209021827
@@ -1780,6 +1801,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &235673845
@@ -2123,6 +2147,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &286174383
@@ -2506,6 +2533,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &323983634
@@ -2720,6 +2750,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &343480234
@@ -2879,6 +2912,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &346789082
@@ -2964,6 +3000,9 @@ MonoBehaviour:
   isPassthrough: 1
   isFirstLaunch: 1
   canPressButton: 1
+  isEasy: 0
+  isNormal: 0
+  isHard: 0
   MapPosition: {x: 0, y: 1, z: 0.5}
 --- !u!4 &364858721
 Transform:
@@ -3281,6 +3320,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &382736941
@@ -3534,6 +3576,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &439833955
@@ -3693,6 +3738,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &463701860
@@ -3852,6 +3900,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &464492453
@@ -4011,6 +4062,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &464793953
@@ -4304,6 +4358,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &467933474
@@ -4463,6 +4520,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &469489274
@@ -4605,7 +4665,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reset
+  m_text: 'Relocate
 
     Board'
   m_isRightToLeft: 0
@@ -4634,8 +4694,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4791,6 +4851,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &509682712
@@ -4858,7 +4921,7 @@ GameObject:
   - component: {fileID: 510554679}
   m_Layer: 2
   m_Name: NxtBtn
-  m_TagString: NextButton
+  m_TagString: AiButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5411,6 +5474,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1001 &583556151
@@ -5617,6 +5683,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &586751254
@@ -5902,6 +5971,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &638543408
@@ -6011,6 +6083,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &638543413
@@ -6329,6 +6404,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &674292845
@@ -6438,6 +6516,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &674292850
@@ -6701,11 +6782,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayLength: 10
   whoami: O
-  Fanfare: {fileID: 2142920087}
   LineC: {fileID: 1289653765}
   GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
 --- !u!114 &702640321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6974,6 +7055,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1001 &770247892
@@ -7576,11 +7660,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayLength: 10
   whoami: X
-  Fanfare: {fileID: 2142920087}
   LineC: {fileID: 267142284}
   GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
 --- !u!114 &779094361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7738,6 +7822,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &827091358
@@ -7960,6 +8047,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &860727149
@@ -8277,6 +8367,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &882293441
@@ -8436,6 +8529,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &886605189
@@ -8595,6 +8691,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &897763708
@@ -9068,6 +9167,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &947188863
@@ -9333,6 +9435,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &974650226
@@ -9498,7 +9603,7 @@ GameObject:
   - component: {fileID: 1013158513}
   m_Layer: 2
   m_Name: NxtBtn (1)
-  m_TagString: NextButton
+  m_TagString: AiButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9733,6 +9838,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1035844664
@@ -9968,6 +10076,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1060322811
@@ -10171,6 +10282,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1103665597
@@ -10495,6 +10609,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1158088031
@@ -10733,6 +10850,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1182349181
@@ -11751,6 +11871,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!4 &1221960529 stripped
@@ -11915,6 +12038,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 1, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1259193677
@@ -12222,6 +12348,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1344417935
@@ -12331,6 +12460,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1344417940
@@ -12490,6 +12622,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1387469184
@@ -12724,6 +12859,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1408309968
@@ -13158,6 +13296,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!4 &1499284639 stripped
@@ -13272,6 +13413,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1532010744
@@ -13653,6 +13797,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1559983143
@@ -14084,6 +14231,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 1, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1577087275
@@ -14243,6 +14393,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 1, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1582021781
@@ -14477,6 +14630,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1612740179
@@ -15143,6 +15299,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1744056138
@@ -15632,6 +15791,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1788856361
@@ -15841,6 +16003,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1836593460
@@ -16316,6 +16481,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1890936752
@@ -16475,6 +16643,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1894017862
@@ -16634,6 +16805,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1906679242
@@ -16923,11 +17097,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayLength: 10
   whoami: X
-  Fanfare: {fileID: 2142920087}
   LineC: {fileID: 267142284}
   GM: {fileID: 2142920086}
   BlueFireworks: {fileID: 2008605624}
   OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
 --- !u!114 &1965819327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17052,6 +17226,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1968856107
@@ -17211,6 +17388,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1969502481
@@ -17370,6 +17550,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &1999347571
@@ -17684,6 +17867,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &2019429608
@@ -18203,6 +18389,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &2079668756
@@ -18412,6 +18601,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &2106590297
@@ -18571,6 +18763,9 @@ MonoBehaviour:
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 2008605624}
+  OrangeFireworks: {fileID: 2143922353}
+  Fanfare: {fileID: 2142920087}
   m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &2142920083
@@ -18655,7 +18850,7 @@ MonoBehaviour:
   AiObject: {fileID: 545979396}
   isAiGame: 1
   isMainMenu: 0
-  m_AiDifficulty: 0
+  m_AiDifficulty: 2
   m_GridLayers:
   - {fileID: 1076139623}
   - {fileID: 1060322812}

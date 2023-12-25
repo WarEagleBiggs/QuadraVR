@@ -372,6 +372,18 @@ public class GameMaster : MonoBehaviour
     
     private void Start()
     {
+
+        if (Singleton.Instance.isEasy)
+        {
+            m_AiDifficulty = AI.DifficultyLevel.Easy;
+        } else if (Singleton.Instance.isNormal)
+        {
+            m_AiDifficulty = AI.DifficultyLevel.Normal;
+        } else if (Singleton.Instance.isHard)
+        {
+            m_AiDifficulty = AI.DifficultyLevel.Hard;
+        }
+        
         // populate the layout of the game matrix
         PopulateGameMatrix();
         
@@ -425,8 +437,10 @@ public class GameMaster : MonoBehaviour
             instantiatedObj.transform.localScale = obj_o.transform.localScale; // Set the local scale to match obj_x
             instantiatedObj.transform.localPosition = Vector3.zero; // Set local position to (0,0,0)
             
-            if (isAiGame) {
-                AiObject.PlaceO(instantiatedObj, m_AiDifficulty);
+            if (isAiGame)
+            {
+                StartCoroutine(WaitToPlace());
+                
             }
         }
 
@@ -434,6 +448,12 @@ public class GameMaster : MonoBehaviour
         instantiatedObj.SetActive(true);
 
         
+    }
+
+    public IEnumerator WaitToPlace()
+    {
+        yield return new WaitForSeconds(2);
+        AiObject.PlaceO(instantiatedObj, m_AiDifficulty);
     }
 
     void Update()

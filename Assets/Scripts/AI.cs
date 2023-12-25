@@ -42,7 +42,7 @@ public class AI : MonoBehaviour
     }
 
     private static ProbabilityTable s_EasyProbability = new ProbabilityTable(20, 65, 100);
-    private static ProbabilityTable s_NormalProbability = new ProbabilityTable(1, 85, 100);
+    private static ProbabilityTable s_NormalProbability = new ProbabilityTable(2, 95, 100);
     private static ProbabilityTable s_HardProbability = new ProbabilityTable(0, 99, 100);
 
     private bool ChooseRandomAvailablePosition(GameObject newO)

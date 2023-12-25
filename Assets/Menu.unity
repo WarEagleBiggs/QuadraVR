@@ -383,7 +383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_ClearFlags
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_BackGroundColor.a
@@ -1430,9 +1430,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &36174498
 GameObject:
@@ -1725,6 +1732,8 @@ RectTransform:
   - {fileID: 2059521553}
   - {fileID: 1826322663}
   - {fileID: 934217197}
+  - {fileID: 820772438}
+  - {fileID: 454711866}
   - {fileID: 877672987}
   - {fileID: 1992494488}
   m_Father: {fileID: 1836593461}
@@ -2383,9 +2392,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1001 &63137262
 PrefabInstance:
@@ -2663,9 +2679,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &73223601
 GameObject:
@@ -3233,9 +3256,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &102341890
 GameObject:
@@ -3720,9 +3750,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &117374589
 GameObject:
@@ -4164,7 +4201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reset
+  m_text: 'Relocate
 
     Board'
   m_isRightToLeft: 0
@@ -4193,8 +4230,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7185,9 +7222,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &192664016
 GameObject:
@@ -9574,6 +9618,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270079608}
   m_CullTransparentMesh: 1
+--- !u!1 &274276530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274276531}
+  - component: {fileID: 274276533}
+  - component: {fileID: 274276532}
+  m_Layer: 2
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &274276531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274276530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 454711866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &274276532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274276530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Hard
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &274276533
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274276530}
+  m_CullTransparentMesh: 1
 --- !u!1 &275001960
 GameObject:
   m_ObjectHideFlags: 0
@@ -9981,6 +10159,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286379363}
   m_Mesh: {fileID: 3632494254485653011, guid: ec7ea06e549108643a942c9303c22681, type: 3}
+--- !u!1 &287309802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287309803}
+  - component: {fileID: 287309805}
+  - component: {fileID: 287309804}
+  m_Layer: 2
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &287309803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287309802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 820772438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &287309804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287309802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Normal
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &287309805
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287309802}
+  m_CullTransparentMesh: 1
 --- !u!1 &291295328
 GameObject:
   m_ObjectHideFlags: 0
@@ -10329,9 +10641,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &296492319
 GameObject:
@@ -11612,6 +11931,7 @@ GameObject:
   - component: {fileID: 364858721}
   - component: {fileID: 364858720}
   - component: {fileID: 364858722}
+  - component: {fileID: 364858723}
   m_Layer: 0
   m_Name: Singleton
   m_TagString: Untagged
@@ -11634,6 +11954,9 @@ MonoBehaviour:
   isPassthrough: 1
   isFirstLaunch: 1
   canPressButton: 1
+  isEasy: 0
+  isNormal: 0
+  isHard: 0
   MapPosition: {x: 0, y: 1, z: 0.5}
 --- !u!4 &364858721
 Transform:
@@ -11662,9 +11985,105 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9fe61ca8a5022224d94c3e34f34c03cb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.715
-  m_Pitch: 2
+  m_Volume: 0.533
+  m_Pitch: 2.67
   Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &364858723
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364858719}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3af5ecbd500c37648a0275472004ec12, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.628
+  m_Pitch: 0.95
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12621,9 +13040,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &384415119
 GameObject:
@@ -13108,9 +13534,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &395588456
 GameObject:
@@ -13346,9 +13779,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &400230959
 GameObject:
@@ -13718,9 +14158,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &410836127
 GameObject:
@@ -14527,9 +14974,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &437270434 stripped
 GameObject:
@@ -14785,6 +15239,177 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449566687}
   m_Mesh: {fileID: -3131775641064622426, guid: ec7ea06e549108643a942c9303c22681, type: 3}
+--- !u!1 &454711865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454711866}
+  - component: {fileID: 454711871}
+  - component: {fileID: 454711870}
+  - component: {fileID: 454711869}
+  - component: {fileID: 454711868}
+  - component: {fileID: 454711867}
+  m_Layer: 2
+  m_Name: hard
+  m_TagString: hardButton
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &454711866
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454711865}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 254.99966}
+  m_LocalScale: {x: 5.1012006, y: 5.1011996, z: 5.1012006}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 274276531}
+  m_Father: {fileID: 39556174}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 452, y: -844.5}
+  m_SizeDelta: {x: 80, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!54 &454711867
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454711865}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &454711868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454711865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 77.95, y: 47.24, z: 2.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &454711869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454711865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 454711870}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &454711870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454711865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.14841354, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &454711871
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454711865}
+  m_CullTransparentMesh: 1
 --- !u!1 &460092767
 GameObject:
   m_ObjectHideFlags: 0
@@ -15019,9 +15644,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &464249334
 GameObject:
@@ -18127,9 +18759,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &571586123
 GameObject:
@@ -18282,9 +18921,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &575199184
 GameObject:
@@ -18852,9 +19498,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &596981934
 GameObject:
@@ -19702,9 +20355,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &626308498
 GameObject:
@@ -20023,9 +20683,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &640519040
 GameObject:
@@ -20760,9 +21427,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &676009140
 GameObject:
@@ -21424,9 +22098,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &716766064
 GameObject:
@@ -22025,9 +22706,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &738170187
 GameObject:
@@ -22655,9 +23343,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &756080929
 GameObject:
@@ -22810,9 +23505,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &758751344
 GameObject:
@@ -23214,9 +23916,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &768947494
 GameObject:
@@ -24287,9 +24996,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &800256618
 GameObject:
@@ -25264,10 +25980,188 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
+--- !u!1 &820772437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820772438}
+  - component: {fileID: 820772443}
+  - component: {fileID: 820772442}
+  - component: {fileID: 820772441}
+  - component: {fileID: 820772440}
+  - component: {fileID: 820772439}
+  m_Layer: 2
+  m_Name: normal
+  m_TagString: normalButton
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &820772438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820772437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 254.99966}
+  m_LocalScale: {x: 5.1012006, y: 5.1011996, z: 5.1012006}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 287309803}
+  m_Father: {fileID: 39556174}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 452, y: -580.9}
+  m_SizeDelta: {x: 80, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!54 &820772439
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820772437}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &820772440
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820772437}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 77.95, y: 47.24, z: 2.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &820772441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820772437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 820772442}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &820772442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820772437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.98151994, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &820772443
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820772437}
+  m_CullTransparentMesh: 1
 --- !u!1 &825125015
 GameObject:
   m_ObjectHideFlags: 0
@@ -25419,9 +26313,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &827067980
 GameObject:
@@ -25574,9 +26475,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &828313467
 GameObject:
@@ -26991,7 +27899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -123, y: -341}
+  m_AnchoredPosition: {x: -123, y: -571.35}
   m_SizeDelta: {x: 0, y: -1460.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877672988
@@ -27421,9 +28329,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &898356205
 GameObject:
@@ -27780,9 +28695,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &906358637
 GameObject:
@@ -28128,8 +29050,8 @@ GameObject:
   - component: {fileID: 934217199}
   - component: {fileID: 934217198}
   m_Layer: 2
-  m_Name: AiBtn (1)
-  m_TagString: AiButton
+  m_Name: easy
+  m_TagString: easyButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28151,7 +29073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124.59, y: -891.6}
+  m_AnchoredPosition: {x: 452, y: -317.9}
   m_SizeDelta: {x: 80, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!54 &934217198
@@ -30338,9 +31260,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &994881584
 GameObject:
@@ -31691,9 +32620,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1056171673
 GameObject:
@@ -32263,9 +33199,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1076139622
 GameObject:
@@ -32714,9 +33657,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1099198060
 GameObject:
@@ -35084,9 +36034,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1216188992
 GameObject:
@@ -35322,9 +36279,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1219221035
 GameObject:
@@ -36977,9 +37941,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1258478365
 GameObject:
@@ -37670,9 +38641,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1285878766
 GameObject:
@@ -38744,9 +39722,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1318127332
 GameObject:
@@ -39314,9 +40299,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1333616512
 GameObject:
@@ -40299,9 +41291,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1385522626
 GameObject:
@@ -40620,9 +41619,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1392906013
 GameObject:
@@ -40775,9 +41781,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1394105929
 GameObject:
@@ -41088,9 +42101,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1396596306
 GameObject:
@@ -42504,9 +43524,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1418043621
 GameObject:
@@ -43074,7 +44101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: Easy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43101,8 +44128,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -43634,9 +44661,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1456078205
 GameObject:
@@ -43872,9 +44906,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1460038731
 GameObject:
@@ -45220,9 +46261,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1494579478
 GameObject:
@@ -46211,9 +47259,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1536130584
 GameObject:
@@ -49966,9 +51021,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1690618916
 GameObject:
@@ -52058,9 +53120,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1750900608
 GameObject:
@@ -52213,9 +53282,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1750936709
 GameObject:
@@ -54370,9 +55446,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1808147027
 GameObject:
@@ -54945,9 +56028,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1835158473
 GameObject:
@@ -57249,9 +58339,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1907982211
 GameObject:
@@ -57736,9 +58833,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1919760406
 GameObject:
@@ -57891,9 +58995,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1922927480
 GameObject:
@@ -58129,9 +59240,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &1929695190
 GameObject:
@@ -59956,7 +61074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117.47, y: -193.84976}
+  m_AnchoredPosition: {x: -117.47, y: -420.5}
   m_SizeDelta: {x: 650, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992494489
@@ -60907,9 +62025,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1001 &2024307592
 PrefabInstance:
@@ -61306,9 +62431,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &2034118325
 GameObject:
@@ -62010,9 +63142,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &2056004526
 GameObject:
@@ -63329,9 +64468,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &2093985991
 GameObject:
@@ -63952,9 +65098,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!1 &2111522879
 GameObject:
@@ -64946,6 +66099,11 @@ MonoBehaviour:
   parent_X: {fileID: 0}
   parent_O: {fileID: 0}
   PokeScript: {fileID: 1744051501}
+  AiObject: {fileID: 0}
+  isAiGame: 0
+  isMainMenu: 1
+  m_AiDifficulty: 0
+  m_GridLayers: []
 --- !u!82 &2142920087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94968,9 +96126,16 @@ MonoBehaviour:
   gm: {fileID: 2142920086}
   HGIR: {fileID: 0}
   HGIL: {fileID: 0}
+  LineO: {fileID: 0}
+  LineX: {fileID: 0}
+  m_Piece: {fileID: 0}
   isTaken: 0
   isX: 0
   isO: 0
+  BlueFireworks: {fileID: 0}
+  OrangeFireworks: {fileID: 0}
+  Fanfare: {fileID: 0}
+  m_GridCoord: {x: 0, y: 0, z: 0}
   PresetParent: {fileID: 1636995834}
 --- !u!23 &6053635978781190114
 MeshRenderer:

@@ -9,7 +9,7 @@ public class CubeRaycaster : MonoBehaviour
     public float rayLength = 100f; // Length of the raycast
     public string whoami;
 
-    public AudioSource Fanfare;
+    
 
     public LineConnector LineC;
 
@@ -17,7 +17,7 @@ public class CubeRaycaster : MonoBehaviour
 
     public GameObject BlueFireworks;
     public GameObject OrangeFireworks;
-
+public AudioSource Fanfare;
 
     public void RayCastCall()
     {
