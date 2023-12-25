@@ -127,41 +127,43 @@ public class GameMaster : MonoBehaviour
     private Vector3Int[] m_AllDirections =
         new Vector3Int[]
         {
-            new Vector3Int(1, 0, 0),
-            new Vector3Int(-1, 0, 0),
-            new Vector3Int(0, 1, 0),
-            new Vector3Int(0, -1, 0),
+            // 0's
             new Vector3Int(0, 0, 1),
             new Vector3Int(0, 0, -1),
+            
+            new Vector3Int(0, 1, 0),
+            new Vector3Int(0, 1, 1),
+            new Vector3Int(0, 1, -1),
+            
+            new Vector3Int(0, -1, 0),
+            new Vector3Int(0, -1, 1),
+            new Vector3Int(0, -1, -1),
 
-            // leave x
-            new Vector3Int(1, 1, 0),
-            new Vector3Int(1, -1, 0),
+            // 1's
+            new Vector3Int(1, 0, 0),
             new Vector3Int(1, 0, 1),
             new Vector3Int(1, 0, -1),
+            
+            new Vector3Int(1, 1, 0),
+            new Vector3Int(1, 1, 1),
+            new Vector3Int(1, 1, -1),
+            
+            new Vector3Int(1, -1, 0),
+            new Vector3Int(1, -1, 1),
+            new Vector3Int(1, -1, -1),
 
-            new Vector3Int(-1, 1, 0),
-            new Vector3Int(-1, -1, 0),
+            // -1's
+            new Vector3Int(-1, 0, 0),
             new Vector3Int(-1, 0, 1),
             new Vector3Int(-1, 0, -1),
-
-            // leave y
+            
             new Vector3Int(-1, 1, 0),
-            new Vector3Int(0, 1, 1),
-            new Vector3Int(0, 1, -1),
+            new Vector3Int(-1, 1, 1),
+            new Vector3Int(-1, 1, -1),
             
             new Vector3Int(-1, -1, 0),
-            new Vector3Int(0, -1, 1),
-            new Vector3Int(0, -1, -1),
-            
-            // leave z
-            new Vector3Int(-1, 0, 1),
-            new Vector3Int(0, 1, 1),
-            new Vector3Int(0, -1, 1),
-
-            new Vector3Int(-1, 0, -1),
-            new Vector3Int(0, 1, -1),
-            new Vector3Int(0, -1, -1),
+            new Vector3Int(-1, -1, 1),
+            new Vector3Int(-1, -1, -1),
         };
     
     
