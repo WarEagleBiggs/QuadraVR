@@ -28,6 +28,10 @@ TagManager:
   - easyButton
   - normalButton
   - hardButton
+  - promptReset
+  - promptResetNo
+  - promptMenu
+  - promptMenuNo
   layers:
   - Default
   - TransparentFX

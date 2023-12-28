@@ -224,6 +224,36 @@ public class MyPoke : MonoBehaviour
             Singleton.Instance.canPressButton = true;
             Singleton.Instance.isHard = true;
             SceneManager.LoadScene(2);
+        } else if (other.tag == "promptReset" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            resetYes.SetActive(true);
+            resetNo.SetActive(true);
+        } else if (other.tag == "promptResetNo" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            resetYes.SetActive(false);
+            resetNo.SetActive(false);
+        } else if (other.tag == "promptMenu" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            menuYes.SetActive(true);
+            menuNo.SetActive(true);
+        } else if (other.tag == "promptMenuNo" && Singleton.Instance.canPressButton)
+        {
+            StartCoroutine(Singleton.Instance.PressCooldown());
+            Click.Play();
+            menuYes.SetActive(false);
+            menuNo.SetActive(false);
         }
     }
+
+    public GameObject resetYes;
+    public GameObject resetNo;
+    
+    public GameObject menuYes;
+    public GameObject menuNo;
 }
